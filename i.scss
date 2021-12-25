@@ -1,0 +1,19 @@
+.landing-section {
+
+  height: 100vh;
+  width: 100%;
+  background-image: url("./media/images/duesseldorfer-rhein.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  article {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    color: white;
+  }
+
+}
