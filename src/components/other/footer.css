@@ -1,0 +1,59 @@
+footer {
+  background-color: #142420;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  color: white;
+  padding: 50px 20%;
+  display: grid;
+  grid-template-areas: "kontakt links" "credits links";
+  row-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  justify-items: stretch;
+}
+footer a {
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: underline;
+}
+footer .contact-section {
+  grid-area: kontakt;
+}
+footer .contact-section h4 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+footer .contact-section p {
+  margin-bottom: 15px;
+}
+footer .link-section {
+  grid-area: links;
+  padding: 0 0 0 100px;
+  border-left: 2px solid white;
+  display: grid;
+}
+footer .link-section .link-icon {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+footer .link-section .email {
+  background-image: url("./../../media/svgs/email.svg");
+  border-radius: 50px;
+  background-color: white;
+  background-size: 60%;
+}
+footer .link-section .instagram {
+  background-image: url("./../../media/svgs/instagram.svg");
+}
+footer .link-section .facebook {
+  background-image: url("./../../media/svgs/facebook.svg");
+}
+footer .link-section .twitter {
+  background-image: url("./../../media/svgs/twitter.svg");
+}
+footer .credit-section {
+  grid-area: credits;
+}/*# sourceMappingURL=footer.css.map */

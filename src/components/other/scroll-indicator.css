@@ -1,0 +1,36 @@
+.scroll-indicator {
+  bottom: 0;
+  left: calc(50% - 75px);
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("./../../media/svgs/arrow_drop_down_white_24dp.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-animation: scroll-indicator 1.8s infinite;
+          animation: scroll-indicator 1.8s infinite;
+}
+
+@-webkit-keyframes scroll-indicator {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes scroll-indicator {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}/*# sourceMappingURL=scroll-indicator.css.map */

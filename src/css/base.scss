@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+@keyframes blend-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+body, html {
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  animation: blend-in 2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-wrap: break-all;
+  word-break:break-word;
+  hyphens: auto;
+}
+
+a {
+  color: rgb(50, 50, 50);
+}
+
+.super-container {
+  height: auto;
+}
