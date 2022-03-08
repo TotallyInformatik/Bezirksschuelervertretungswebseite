@@ -6,8 +6,9 @@ import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 import "./css/base.css"
 
-import Home from "./components/Home/home";
-import PageFooter from "./components/other/footer";
+import Home from "./components/Pages/Home/home";
+import PageFooter from "./components/reusables/Footer/footer";
+import Navigation from "./components/reusables/Navigation/navigation";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +23,7 @@ AOS.init({
 
 ReactDOM.render(
   <Router>
+    <Navigation />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/aktuelles" element={<Home />} />

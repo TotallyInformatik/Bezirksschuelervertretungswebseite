@@ -40,19 +40,19 @@ footer .link-section .link-icon {
   background-position: center center;
 }
 footer .link-section .email {
-  background-image: url("./../../media/svgs/email.svg");
+  background-image: url("../../../media/svgs/email.svg");
   border-radius: 50px;
   background-color: white;
   background-size: 60%;
 }
 footer .link-section .instagram {
-  background-image: url("./../../media/svgs/instagram.svg");
+  background-image: url("../../../media/svgs/instagram.svg");
 }
 footer .link-section .facebook {
-  background-image: url("./../../media/svgs/facebook.svg");
+  background-image: url("../../../media/svgs/facebook.svg");
 }
 footer .link-section .twitter {
-  background-image: url("./../../media/svgs/twitter.svg");
+  background-image: url("../../../media/svgs/twitter.svg");
 }
 footer .credit-section {
   grid-area: credits;

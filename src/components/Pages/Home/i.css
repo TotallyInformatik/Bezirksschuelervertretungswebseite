@@ -24,7 +24,7 @@
 
 .landing-section main {
   overflow: hidden;
-  width: calc(100% - 400px);
+  width: 100%;
   position: relative;
 }
 .landing-section main article {
@@ -68,87 +68,6 @@
   font-size: 50em;
   transform: rotateZ(45deg);
   line-height: 1.1;
-}
-
-@-webkit-keyframes aside-scroll-in {
-  0% {
-    right: -400px;
-  }
-  100% {
-    right: 0;
-  }
-}
-
-@keyframes aside-scroll-in {
-  0% {
-    right: -400px;
-  }
-  100% {
-    right: 0;
-  }
-}
-.landing-section aside {
-  position: relative;
-  -webkit-animation: aside-scroll-in 1s ease;
-          animation: aside-scroll-in 1s ease;
-}
-
-.landing-section aside, .navigation-link-detailed .sub-menu {
-  width: 400px;
-  background-color: white;
-  overflow-x: hidden;
-}
-.landing-section aside .navigation-back-button, .navigation-link-detailed .sub-menu .navigation-back-button {
-  margin: 50px 0 0 50px;
-  height: 30px;
-  width: 30px;
-  background-image: url("./arrow_back_ios_red_24dp.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.landing-section aside ul, .navigation-link-detailed .sub-menu ul {
-  padding: 50px 50px;
-  list-style-type: none;
-  overflow: hidden;
-}
-.landing-section aside ul li, .navigation-link-detailed .sub-menu ul li {
-  cursor: pointer;
-  margin-right: 0;
-  margin-left: 0;
-  transition: margin-left 0.2s ease, margin-right 0.2s ease;
-  margin-bottom: 20px;
-  font-size: 1.7rem;
-  font-weight: 1000;
-  background-image: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%), linear-gradient(90deg, #cc7f7f, #f59999);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-.landing-section aside ul li:hover, .landing-section aside ul li:focus, .navigation-link-detailed .sub-menu ul li:hover, .navigation-link-detailed .sub-menu ul li:focus {
-  margin-left: 10px;
-  margin-right: -10px;
-}
-
-.landing-section aside {
-  -webkit-animation: aside-scroll-in 1.5s;
-          animation: aside-scroll-in 1.5s;
-}
-
-.navigation-link-detailed .sub-menu {
-  height: 100vh;
-  min-height: 700px;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  transition: right 0.5s ease;
-  right: -400px;
-}
-
-.navigation-link-detailed .sub-menu.menu-open {
-  right: 0;
-}
-
-.navigation-link-detailed .sub-menu.menu-closed {
-  right: -400px;
 }
 
 .introduction-section {

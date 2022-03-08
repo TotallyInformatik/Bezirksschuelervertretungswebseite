@@ -1,9 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 
 import IndexHeaderLink from "./index-link";
-
-import backButton from "./../../media/svgs/arrow_back_ios_white_24dp.svg";
 
 class IndexDetailedLink extends React.Component {
 

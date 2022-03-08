@@ -1,14 +1,13 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
-import IndexHeaderLink from "../other/index-link";
-import IndexDetailedLink from "../other/index-detailed-link";
-import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
-import ScrollIndicator from "../other/scroll-indicator";
+import IndexHeaderLink from "../../reusables/Navigation/index-link";
+import IndexDetailedLink from "../../reusables/Navigation/index-detailed-link";
+import ScrollIndicator from "../../reusables/ScrollIndicator/scroll-indicator";
 
-import logo from "./../../wp-content/uploads/2017/12/BSV-Logo.jpg";
+import logo from "./../../../wp-content/uploads/2017/12/BSV-Logo.jpg";
 
-import "./../../css/base.css";
+import "./../../../css/base.css";
 import "./i.css";
 
 
@@ -43,42 +42,6 @@ function Home() {
           <ScrollIndicator />
 
         </main>
-            
-        <aside>
-
-            <img src={logo} alt="Das Logo der BSV" />
-
-            <nav>
-              <ul className="navigation-links">
-                <IndexHeaderLink link="/" display="Homepage" />
-                <IndexHeaderLink link="/aktuelles" display="Aktuelles" />
-                <IndexDetailedLink link="/dokumente" display="Dokumente">
-                  <IndexHeaderLink link="/arbeitsprogramm-2020-21" display="Arbeitsprogramm 2020/2021" />
-                  <IndexHeaderLink link="/satzung" display="Satzung" />
-                  <IndexHeaderLink link="/wahl-und-geschaeftsordnung" display="Wahl- und Geschäftsordnung" />
-                </IndexDetailedLink>
-                <IndexDetailedLink link="/resolutionen" display="Resolutionen">
-                  <IndexHeaderLink link="/wirtschaft-als-fach" display="Resolution Wirtschaft als Fach" />
-                  <IndexHeaderLink link="/resolution-abschiebungen" display="Resolution Abschiebungen" />
-                  <IndexHeaderLink link="/lgbtq" display="Resolution LGBTQ+" />
-                </IndexDetailedLink>
-                <IndexDetailedLink link="/resolutionen" display="Reden">
-                  <IndexHeaderLink link="/wirtschaft-als-fach" display="Rede zum ZeroCovid-Aktionstag" />
-                  <IndexHeaderLink link="/resolution-abschiebungen" display="Rede zum globalen Klimastreik" />
-                  <IndexHeaderLink link="/lgbtq" display="Rede zum Red Hand Day" />
-                  <IndexHeaderLink link="/lgbtq" display='Rede zur "Kein Meter für Querdenken!" - Kundgebung' />
-                </IndexDetailedLink>
-                <IndexHeaderLink link="/mach-mit" display="Mach Mit!" />
-                <IndexDetailedLink link="/resolutionen" display="Kontakt">
-                  <li><a href="mailto:info@bsv-duesseldorf.de">E-mail</a></li>
-                  <li><a href="https://www.instagram.com/bsv.duesseldorf/">Instagram</a></li>
-                  <li><a href="https://www.facebook.com/bsvduesseldorf">Facebook</a></li>
-                  <li><a href="https://twitter.com/BsvDusseldorf">Twitter</a></li>
-                </IndexDetailedLink>
-              </ul>
-            </nav>
-
-        </aside>
 
       </section>
 
