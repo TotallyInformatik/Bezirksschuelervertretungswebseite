@@ -9,7 +9,11 @@ class IndexHeaderLink extends React.Component {
 
   render() {
     return (
-        <li className="navigation-link"><NavLink to={this.props.link}>{this.props.display}</NavLink></li>
+        <li className="navigation-link"><NavLink to={this.props.link} onClick={() => window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        })}>{this.props.display}</NavLink></li>
     );
   }
 
