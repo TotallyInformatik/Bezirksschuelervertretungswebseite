@@ -1,14 +1,10 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
-import IndexHeaderLink from "../../reusables/Navigation/index-link";
-import IndexDetailedLink from "../../reusables/Navigation/index-detailed-link";
 import ScrollIndicator from "../../reusables/ScrollIndicator/scroll-indicator";
 
-import logo from "./../../../wp-content/uploads/2017/12/BSV-Logo.jpg";
-
 import "./../../../css/base.css";
-import "./i.css";
+import "./css/home.css";
 
 import PageFooter from "../../reusables/Footer/footer";
 
@@ -25,15 +21,15 @@ function Home() {
         <main>
           
           <article>
-            <h1 className="abkuerzung">BSV D'dorf</h1>
-            <h1 className="ausgefuehrt">
+            <h1 className="abbreviation">BSV D'dorf</h1>
+            <h1 className="heading">
               <span>Die</span>
               <span>Bezirks-SV</span>
               <span>Düsseldorf</span>
             </h1>
           </article>
 
-          <div className="durchsichtiger-text">
+          <div className="transparent-text">
             <h1>BSV</h1>
             <h1>BSV</h1>
             <h1>BSV</h1>
@@ -59,10 +55,11 @@ function Home() {
           <article className="wir-sind">
             <div className="checkpoint" data-aos="fade-in" data-aos-anchor-placement="top-center"></div>
             <div className="content" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <h2>
+              <h2 className="span-heading">
                 <span>Wir</span>
                 <span>Sind</span>
               </h2>
+              <h2 className="non-span-heading">Wir Sind</h2>
               <p><span>die <u>gesetzlich legitimierte</u> Schüler*innenvertretung Düsseldorfs</span></p>
             </div>
           </article>
@@ -70,12 +67,13 @@ function Home() {
           <article className="wir-setzen-uns-ein">
             <div className="checkpoint" data-aos="fade-in" data-aos-anchor-placement="top-center"></div>
             <div className="content" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <h2>
+              <h2 className="span-heading">
                 <span>Wir</span>
                 <span>Setzen</span>
                 <span>Uns</span>
                 <span>Ein</span>
               </h2>
+              <h2 className="non-span-heading">Wir Setzen Uns Ein</h2>
               <p>
                 <span>für die Schüler*innenrechte in Düsseldorf</span>
                 <span>für <u>Innovation</u> im Schulalltag</span>
@@ -87,10 +85,11 @@ function Home() {
           <article className="mach-mit">
             <div className="checkpoint" data-aos="fade-in" data-aos-anchor-placement="top-center"></div>
             <div className="content" data-aos="fade-right" data-aos-anchor-placement="top-center">
-              <h2>
+              <h2 className="span-heading">
                 <span>Mach</span>
                 <span>Mit</span>
               </h2>
+              <h2 className="non-span-heading">Mach Mit</h2>
               <p>
                 <span><u>Engagiere dich</u> auch für die Interessen der Schüler*innen.</span>
                 <span>Erfahre <NavLink to="/impressum/">mehr</NavLink> über das Mitmachen</span>
@@ -103,7 +102,7 @@ function Home() {
 
       <section className="posts-header-section">
 
-        <div className="durchsichtiger-text no-break">
+        <div className="transparent-text no-break">
           <h1>Engagement</h1>
           <h1>Engagement</h1>
           <h1>Engagement</h1>

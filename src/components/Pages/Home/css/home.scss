@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
-@import "./../../../css/constants.scss";
+@import "./../../../../css/constants.scss";
 
-$landing-upper-padding: 15vh;
+$landing-upper-padding: 100px;
 
 $landing-section-min-height: 700px;
 
@@ -12,7 +12,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 
 
-.durchsichtiger-text {
+.transparent-text {
   h1 {
     -webkit-touch-callout: none;
     user-select: none;
@@ -30,13 +30,14 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   background-color: $accent-color;
   background-image: $background-gradient;
   display: flex;
-  height: 100vh;
-  min-height: $landing-section-min-height;
+  height: auto;
+  min-height: 100vh;
 }
 
 .landing-section main {
   overflow: hidden;
   width: 100%;
+  height: auto;
   position: relative;
   
   article {
@@ -47,8 +48,9 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
     display: flex;
     color: white;
+    align-items: center;
 
-    .abkuerzung {
+    .abbreviation {
 
       font-family: 'Arvo';
       writing-mode: vertical-rl;
@@ -58,8 +60,8 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
     }
 
-    .ausgefuehrt {
-      font-size: 5rem;
+    .heading {
+      font-size: 8rem;
       line-height: 1;
       display: flex;
       flex-direction: column;
@@ -76,7 +78,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   }
 
 
-  .durchsichtiger-text {
+  .transparent-text {
     position: absolute;
     top: 0;
     right: 0;
@@ -93,7 +95,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 .introduction-section {
   margin: 0;
-  $decoration-section-width: 200px;
+  $decoration-section-width: 10vw;
   $background-color: whitesmoke;
   background-color: $background-color;
   width: 100%;
@@ -124,6 +126,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   }
 
   .content-section {
+    padding-right: $decoration-section-width / 2;
 
     article {
       margin: 200px 0px;
@@ -141,16 +144,21 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
         left: calc(-#{$decoration-section-width} / 2 - #{$size} / 2);
       }
 
-      div {
+      .content {
         display: flex;
-        h2 {
+        h2.span-heading {
+          flex: 1;
           display: flex;
           flex-direction: column;
           line-height: 1;
           font-size: 5em;
           align-items: flex-end;
         }
+        h2.non-span-heading {
+          display: none;
+        }
         p {
+          flex: 2;
           margin-left: 40px;
           font-size: 1.8em;
           display: flex;
@@ -170,7 +178,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 .posts-header-section {
   position: relative;
-  height: 100vh;
+  height: auto;
   min-height: 700px;
   background: $gradient;
   z-index: 4;
@@ -178,7 +186,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   overflow: hidden;
   color: white;
 
-  .durchsichtiger-text {
+  .transparent-text {
     position: absolute;
     h1 {
       line-height: 0.9;
@@ -187,16 +195,22 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   }
 
   article {
-    margin-top: 100px;
+    margin: 100px 0;
+    padding: 0 100px;
     width: 100%;
+    height: auto;
     h2 {
       text-align: center;
       font-size: 7em;
+      margin-bottom: 50px;
     }
     h3 {
       text-align: center;
       font-size: 4em;
+      opacity: 0.7;
     }
   }
 
 }
+
+@import "./home-responsive.scss";

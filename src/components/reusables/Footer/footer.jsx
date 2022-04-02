@@ -37,7 +37,9 @@ class PageFooter extends React.Component {
           <a className="twitter link-icon" href="https://twitter.com/BsvDusseldorf"></a>
         </section>
         <section className="credit-section">
-          <p>©2022 bsv-duesseldorf.de | Webseite von Rui Zhang</p>
+          <p>©2022 bsv-duesseldorf.de</p>
+          <p>Webseite von Rui Zhang</p>
+          <p>Vertreten durch Johannes</p>
         </section>
 
       </footer>

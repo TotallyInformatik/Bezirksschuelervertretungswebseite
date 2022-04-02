@@ -1,0 +1,166 @@
+// media queries for landing section (which is quite important)
+
+@media screen and (max-width: 1100px) {
+
+  .landing-section main article {
+    padding: $landing-upper-padding + 40px 50px;
+
+    .heading {
+      font-size: 6em;
+    }
+    .abbreviation {
+      font-size: 4em;
+    }
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .landing-section main .transparent-text h1 {
+    font-size: 30em;
+  }
+
+  .landing-section main article {
+    padding: $landing-upper-padding + 60px 40px;
+
+    .heading {
+      font-size: 4em;
+    }
+    .abbreviation {
+      font-size: 3em;
+    }
+  }
+
+  .posts-header-section article {
+    padding: 0 50px;
+    h2 {
+      font-size: 4em;
+    }
+    h3 {
+      font-size: 3em;
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .landing-section main article {
+    padding: $landing-upper-padding + 60px 20px;
+
+    .heading {
+      font-size: 3em;
+    }
+    .abbreviation {
+      font-size: 2em;
+    }
+  }
+
+  .posts-header-section article {
+    padding: 0 50px;
+    h2 {
+      font-size: 3em;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .introduction-section .content-section {
+
+    article .content {
+
+      h2.span-heading {
+        font-size: 3.5em;
+      }
+      p {
+        font-size: 1.3em;
+      }
+
+    }
+
+  }
+
+  .posts-header-section {
+
+    .transparent-text h1 {
+      font-size: 20em;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .introduction-section .content-section {
+
+    article {
+      
+      margin: 100px 0px;
+
+      .content {
+        flex-direction: column;
+
+        h2.span-heading {
+          display: flow-root;
+          margin-bottom: 50px;
+          margin-left: 30px;
+          font-size: 3em;
+
+          span {
+            margin-right: 20px;
+          }
+
+        }
+        p {
+          margin-left: 30px;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 370px) {
+
+  .introduction-section .content-section {
+    margin: 50px 30px;
+
+    article .checkpoint { display: none; }
+
+    article .content {
+
+      h2.span-heading {
+        display: none;
+      }
+      h2.non-span-heading {
+        display: block;
+        font-size: 2em;
+        margin-bottom: 20px;
+  
+        border-bottom: 2px solid $accent-color;
+      }
+      p {
+        margin-left: 0;
+      }
+  
+    } 
+
+  }
+
+  .introduction-section .decoration-section {
+    display: none;
+    width: 0;
+  }
+
+}
+

@@ -7,8 +7,9 @@ nav {
 
 
   ul.navigation-links {
-    transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    right: $offset;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.075, 0.075);
+    transition: right 0.5s, opacity 0.5s;
+    top: 2 * $offset + $size;
     position: fixed;
     width: calc(100% - #{$offset * 2});
     max-width: 400px;
@@ -47,14 +48,14 @@ nav {
   
   }
 
-
   ul.navigation-links.open {
-    top: 2 * $offset + $size;
+    right: $offset;
     opacity: 1;
   }
 
   ul.navigation-links.closed {
-    top: 0px ;
+    //top: 0px ;
+    right: -100%;
     opacity: 0;
   }
 

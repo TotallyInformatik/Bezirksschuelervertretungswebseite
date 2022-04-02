@@ -1,5 +1,5 @@
 footer {
-  background-color: #142420;
+  background-color: rgb(20, 36, 32);
   width: 100%;
   position: relative;
   z-index: 4;
@@ -56,4 +56,27 @@ footer .link-section .twitter {
 }
 footer .credit-section {
   grid-area: credits;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    padding: 50px 5%;
+  }
+  footer .link-section {
+    padding: 0 0 0 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer {
+    display: block;
+  }
+  footer .link-section {
+    border: none;
+    padding: 0px 0px;
+    margin: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */

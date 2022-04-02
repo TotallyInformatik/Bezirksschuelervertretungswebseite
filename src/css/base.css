@@ -21,9 +21,6 @@ body, html {
   -webkit-animation: blend-in 2s ease;
           animation: blend-in 2s ease;
 }
-body ::-webkit-scrollbar, html ::-webkit-scrollbar {
-  display: none;
-}
 
 * {
   margin: 0;
@@ -38,7 +35,7 @@ body ::-webkit-scrollbar, html ::-webkit-scrollbar {
 }
 
 a {
-  color: #323232;
+  color: rgb(50, 50, 50);
 }
 
 .super-container {

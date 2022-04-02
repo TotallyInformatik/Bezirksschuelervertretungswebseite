@@ -1,7 +1,7 @@
 .icon-button {
   display: flex;
   align-items: center;
-  background-color: #cc7f7f;
+  background-color: rgb(204, 127, 127);
   color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
