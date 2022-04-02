@@ -1,0 +1,79 @@
+@import "./../../../css/constants.scss";
+
+
+
+$image-size: 500px;
+
+.template-landing-section {
+
+  background-color: $accentColor;
+  background-image: $background-gradient;
+  width: 100%;
+  height: 100vh;
+  min-height: 700px;
+
+  article {
+
+    $heading-padding: 100px;
+    width: 100%;
+    height: 60%;
+    padding: $heading-padding;
+    
+    h1 {
+      font-size: 5em;
+      color: white;
+    }
+
+    h3 {
+      position: absolute;
+      font-size: 7em;
+      color: white;
+      opacity: 0.1;
+      z-index: 1;
+      top: $heading-padding;
+      left: $heading-padding * 2;
+    }
+
+  }
+
+  img {
+    position: relative;
+    z-index: 1;
+
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+
+    margin-left: calc(50% - #{$image-size / 2});
+
+    box-shadow: 0px -30px 100px $soft-shadow-color;
+  }
+
+
+}
+
+.template-content-section {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  padding: 100px 300px;
+  padding-top: $image-size / 2;
+
+  .upload-date {
+    color: rgba(100, 100, 100, .9);
+  }
+
+  article {
+
+    h2 {
+      font-size: 2em;
+      margin: 50px 0 20px 0;
+    }
+    p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}

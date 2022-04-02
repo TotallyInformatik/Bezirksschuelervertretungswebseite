@@ -1,0 +1,22 @@
+@import "../../../css/constants.scss";
+
+.icon-button {
+
+  display: flex;
+  align-items: center;
+  background-color: $accent-color;
+  color: white;
+
+  width: fit-content;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+
+
+  .icon {
+    $size: 20px;
+    width: $size;
+    height: $size;
+    margin-right: $size / 2;
+  }
+}

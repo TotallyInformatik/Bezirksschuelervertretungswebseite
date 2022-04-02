@@ -6,6 +6,7 @@ import IndexDetailedLink from "./index-detailed-link";
 import "./navigation.css";
 import menuIcon from "./menu_black_24dp.svg";
 import closeIcon from "./close_black_24dp.svg";
+import ScrollIndicator from "../ScrollIndicator/scroll-indicator";
 
 class Navigation extends React.Component {
 
@@ -64,6 +65,7 @@ class Navigation extends React.Component {
             <li><a href="https://www.facebook.com/bsvduesseldorf">Facebook</a></li>
             <li><a href="https://twitter.com/BsvDusseldorf">Twitter</a></li>
           </IndexDetailedLink>
+          <ScrollIndicator></ScrollIndicator>
         </ul>
       </nav>
     );

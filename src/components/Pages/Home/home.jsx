@@ -10,6 +10,8 @@ import logo from "./../../../wp-content/uploads/2017/12/BSV-Logo.jpg";
 import "./../../../css/base.css";
 import "./i.css";
 
+import PageFooter from "../../reusables/Footer/footer";
+
 
 // TODO: link für machmit!!
 
@@ -120,6 +122,8 @@ function Home() {
 
       </section>
 
+      
+      <PageFooter />
     </main>
   )
 
