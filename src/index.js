@@ -33,17 +33,15 @@ function TransitionContent() {
         classNames="fade"
         key={location.key}
       >
-        <div>
-          <Routes location={location}>
-            <Route path="/" element={<Home />} />
-            <Route path="/aktuelles" element={<BDK35 />} /> 
-            <Route path="/dokumente" element={<Home />} />
-            <Route path="/resolutionen" element={<Home />} />
-            <Route path="/reden" element={<Home />} />
-            <Route path="/mach-mit" element={<Home />} />
-            <Route path="/contact" element={<Home />} />
-          </Routes>
-        </div>
+        <Routes location={location}>
+          <Route path="/" element={<Home />} />
+          <Route path="/aktuelles" element={<BDK35 />} /> 
+          <Route path="/dokumente" element={<Home />} />
+          <Route path="/resolutionen" element={<Home />} />
+          <Route path="/reden" element={<Home />} />
+          <Route path="/mach-mit" element={<Home />} />
+          <Route path="/contact" element={<Home />} />
+        </Routes>
       </CSSTransition>
     </TransitionGroup>
   ); 
