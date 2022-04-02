@@ -15,9 +15,6 @@ body, html {
   min-height: 100%;
   overflow-x: hidden;
   animation: blend-in 2s ease;
-  ::-webkit-scrollbar {
-    display: none;
-  } 
 }
 
 * {

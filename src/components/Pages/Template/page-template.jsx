@@ -2,7 +2,7 @@ import React from "react";
 
 import PageFooter from "../../reusables/Footer/footer";
 
-import "./page-template.css";
+import "./css/page-template.css";
 
 
 class PageTemplate extends React.Component {
@@ -39,7 +39,6 @@ class PageTemplate extends React.Component {
             <h3>
               {this.title}
             </h3>
-
           </article>
           <img src={this.thumbnail} alt={this.thumbnail_description} />
         </section>
@@ -50,6 +49,7 @@ class PageTemplate extends React.Component {
             <h2>
               {this.title}
             </h2>
+
 
             {this.contents}
           </article>

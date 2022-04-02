@@ -19,7 +19,6 @@ AOS.init({
 });
 
 
-
 // weitere routes müssen noch hinzugefügt werden
 // TODO: dass die "aktuelles" route auf die 35 BDK Seite führt ist nur ein Test
 

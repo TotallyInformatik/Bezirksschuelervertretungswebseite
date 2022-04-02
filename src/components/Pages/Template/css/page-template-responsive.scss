@@ -1,0 +1,106 @@
+// LANDING SECTION RESPONSIVENESS
+
+/// for mobile screens
+
+$screen-size-checkpoint-1: 650px; // from this point on, the image is reduced to a smaller size that does not stick out
+$screen-size-checkpoint-2: 400px;
+
+@media screen and (max-width: $screen-size-checkpoint-1) {
+  
+  $image-size: 300px;
+
+  .template-landing-section {
+    padding-bottom: 100px;
+
+    article {
+      padding: $heading-padding calc(#{$heading-padding} / 2);
+  
+      h1 {
+        font-size: 3em;
+      }
+  
+      h3 {
+        display: none;
+      }
+  
+    }
+
+    img {
+      top: 0;
+      width: $image-size;
+      height: $image-size;
+      margin-left: calc(50% - #{$image-size / 2});
+    }
+
+  } 
+
+} 
+
+/// for really small mobile screens
+
+
+@media screen and (max-width: $screen-size-checkpoint-2) {
+  $image-size: 200px;
+
+  .template-landing-section {
+
+    article {
+  
+      h1 {
+        font-size: 2em;
+      }
+  
+    }
+
+    img {
+      top: 0;
+      width: $image-size;
+      height: $image-size;
+      margin-left: calc(50% - #{$image-size / 2});
+    }
+
+  } 
+
+} 
+
+
+// CONTENT SECTION RESPONSTIVENESS
+
+/// for medium sized screens
+
+
+@media screen and (max-width: 1200px) {
+
+  .template-content-section {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+} 
+
+@media screen and (max-width: $screen-size-checkpoint-1) {
+  
+  .template-content-section {
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+}
+
+@media screen and (max-width: $screen-size-checkpoint-2) {
+
+  .template-content-section article {
+
+    h2 {
+      font-size: 1.5em;
+      margin: 50px 0 20px 0;
+    }
+    p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+  }
+
+}
