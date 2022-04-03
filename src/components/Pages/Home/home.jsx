@@ -8,6 +8,10 @@ import "./css/home.css";
 
 import PageFooter from "../../reusables/Footer/footer";
 
+/// page-link
+import BDK34 from "./../34-BDK/34-BDK";
+import BDK35 from "./../35-BDK/35-BDK";
+
 
 // TODO: link für machmit!!
 
@@ -118,7 +122,8 @@ function Home() {
       </section>
 
       <section className="posts-section">
-
+        <BDK34 type="link"></BDK34>
+        <BDK35 type="link"></BDK35>
       </section>
 
       

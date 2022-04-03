@@ -10,10 +10,16 @@ class IconButton extends React.Component {
     this.icon = this.props.icon;
     console.log(this.props.download);
     this.download = this.props.download;
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick() {
+    window.location.href = this.download;
   }
 
   render() {
-    return <Link className="icon-button" to={this.download} target="_blank">
+    return <button className="icon-button" onClick={this.onClick} target="_blank">
       <div className="icon" style={{
         backgroundImage: `url(${this.icon})`,
         backgroundRepeat: "no-repeat",
@@ -21,7 +27,7 @@ class IconButton extends React.Component {
         backgroundPosition: "center"
       }}></div>
       {this.props.children}
-    </Link>
+    </button>
   }
 
 }

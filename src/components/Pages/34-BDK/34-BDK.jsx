@@ -2,14 +2,14 @@ import React from "react";
 import PageTemplate from "../Template/page-template";
 import IconButton from "../../reusables/IconButton/button";
 
-import "./35-BDK.css";
+import "./34-BDK.css";
 
-import bdkThumbnail from "./Sharepic-35-BDK-850x850.png";
+import bdkThumbnail from "./Sharepic-BDK-850x850.jpg";
 import downloadButton from "./../../../media/svgs/file_download_white_24dp.svg";
-import invitationDocument from "./Einladung-35.-BDK.pdf";
-import protocollDocument from "./Protokoll-34.-BDK-geschwaerzt.pdf";
+import invitationDocument from "./Allgemeine-Einladung-zur-34-BDK.pdf";
+import protocollDocument from "./Protokoll-der-33.-BDK-geschwaerzt.pdf";
 
-class BDK35 extends React.Component {
+class BDK34 extends React.Component {
 
   constructor(props) {
     super(props);
@@ -19,19 +19,19 @@ class BDK35 extends React.Component {
   render() {
     return (
       <PageTemplate 
-        title="Einladung zur 35. Bezirksdelegiertenkonferenz"
+        title="Einladung zur 34. Bezirksdelegiertenkonferenz"
         thumbnail={bdkThumbnail}
-        thumbnail_description="Sharepic für die Einladung zur 35. BDK"
-        timeOfPublishment="Januar 11, 2022"
+        thumbnail_description="Sharepic für die Einladung zur 34. BDK"
+        timeOfPublishment="Oktober 11, 2021"
         type={this.type}
-        to="/35-bdk"
+        to="/34-bdk"
       >
         <p>
-          Die 35. BDK der BSV Düsseldorf steht an.
+          Die 34. BDK der BSV Düsseldorf steht an.
         </p>
 
         <p>
-          Sie findet am 20.01.22 in der Aula des <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">Leibniz Gymnasiums</a> statt.
+          Sie findet am 04.11.21 am <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">Leibniz Gymnasium</a> statt.
         </p>
 
         <p>
@@ -41,11 +41,11 @@ class BDK35 extends React.Component {
         
 
         <IconButton icon={downloadButton} download={invitationDocument}>
-          Einladung 35. BDK
+          Einladung 34. BDK
         </IconButton>
 
         <IconButton icon={downloadButton} download={protocollDocument}>
-          Protokoll der 34. BDK
+          Protokoll der 33. BDK
         </IconButton>
 
       </PageTemplate>
@@ -54,4 +54,4 @@ class BDK35 extends React.Component {
 
 }
 
-export default BDK35;
+export default BDK34;

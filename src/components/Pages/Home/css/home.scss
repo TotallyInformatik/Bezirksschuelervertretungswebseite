@@ -213,4 +213,17 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 }
 
+.posts-section {
+
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 3;
+
+  padding: 100px;
+
+  display: flex;
+  gap: 50px;
+
+}
+
 @import "./home-responsive.scss";
