@@ -1,0 +1,58 @@
+@import "./../../../../css/constants.scss";
+@import "./constants.scss";
+
+.card-link {
+  background-color: white;
+  position: relative;
+
+  box-shadow: 0 50px 100px $soft-shadow-color;
+
+  width: $size;
+  height: calc($size + $content-size + $border-size);
+  overflow-y: hidden;
+
+  border-bottom: $border-size solid white;
+
+  .fade {
+    width: 100%;
+    height: $border-size * 2;
+    background: linear-gradient(0deg , white 0%, transparent 100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: $size;
+    height: $size;
+    object-fit: contain;
+  }
+
+  section {
+    padding: 30px;
+
+    * { text-decoration: none; }
+
+    .heading-info {
+      margin-bottom: 30px;
+
+      h4 {
+        font-size: 1.5em;
+      }
+
+    } 
+
+    .abbreviated-info p {
+      line-clamp: 3;
+    }
+
+  }
+
+}
+
+a {
+  text-decoration: none;
+}

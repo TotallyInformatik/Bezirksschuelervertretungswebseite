@@ -26,7 +26,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 .landing-section {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   background-color: $accent-color;
   background-image: $background-gradient;
   display: flex;
@@ -35,9 +35,8 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 }
 
 .landing-section main {
-  overflow: hidden;
   width: 100%;
-  height: auto;
+  height: fit-content;
   position: relative;
   
   article {
@@ -100,6 +99,8 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   background-color: $background-color;
   width: 100%;
   display: flex;
+  position: relative;
+  z-index: 3;
 
   .decoration-section {
     background-color: $background-color;
@@ -212,5 +213,60 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
   }
 
 }
+
+@import "./../../Template/css/constants.scss";
+
+.posts-section {
+  background-color: whitesmoke;
+  top: 0;
+  position: relative;
+  z-index: 3;
+  height: auto;
+
+  .posts-container {
+    top: 100px;
+    display: flex;
+    gap: 150px;
+    padding: 100px;
+    overflow-x: auto;
+    transform: rotateZ(180deg);
+    direction: rtl;
+
+    .card-link {
+      text-align: left;
+      transform: rotateZ(180deg);
+      box-shadow: 0 20px 80px $soft-shadow-color;
+    }
+
+  }
+
+  > article {
+    padding: 100px 200px;
+    h2 {
+      font-size: 3em;
+    }
+  }
+
+}
+
+.conclusion-section {
+  position: relative;
+  z-index: 3;
+  background-image: $gradient;
+  background-color: $accent-color;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  q {
+    font-size: 3em;
+  }
+
+}
+
 
 @import "./home-responsive.scss";

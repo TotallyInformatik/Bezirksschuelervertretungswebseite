@@ -40,7 +40,7 @@ class Navigation extends React.Component {
         <ul 
           className={"navigation-links " + (this.state.menuOpen ? "open" : "closed" ) }
         >
-          <IndexHeaderLink link="/" display="Homepage" />
+          <IndexHeaderLink link="/" display="Home" />
           <IndexHeaderLink link="/aktuelles" display="Aktuelles" />
           <IndexDetailedLink link="/dokumente" display="Dokumente">
             <IndexHeaderLink link="/arbeitsprogramm-2020-21" display="Arbeitsprogramm 2020/2021" />

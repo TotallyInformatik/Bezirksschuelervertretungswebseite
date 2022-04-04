@@ -1,14 +1,20 @@
 import React from "react";
-import PageTemplate from "../Template/page-template";
-import IconButton from "../../reusables/IconButton/button";
+import PageTemplate from "./../../Template/page-template";
+import IconButton from "./../../../reusables/IconButton/button";
 
 import "./35-BDK.css";
 
-import bdkThumbnail from "./../../../media/images/Sharepic-35-BDK-850x850.png";
-import downloadButton from "./../../../media/svgs/file_download_white_24dp.svg";
-import invitationDocument from "./../../../media/documents/Einladung-35.-BDK.pdf";
+import bdkThumbnail from "./Sharepic-35-BDK-850x850.png";
+import downloadButton from "./../../../../media/svgs/file_download_white_24dp.svg";
+import invitationDocument from "./Einladung-35.-BDK.pdf";
+import protocollDocument from "./Protokoll-34.-BDK-geschwaerzt.pdf";
 
 class BDK35 extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.type = this.props.type;
+  }
 
   render() {
     return (
@@ -17,6 +23,8 @@ class BDK35 extends React.Component {
         thumbnail={bdkThumbnail}
         thumbnail_description="Sharepic für die Einladung zur 35. BDK"
         timeOfPublishment="Januar 11, 2022"
+        type={this.type}
+        to="/35-bdk"
       >
         <p>
           Die 35. BDK der BSV Düsseldorf steht an.
@@ -36,7 +44,7 @@ class BDK35 extends React.Component {
           Einladung 35. BDK
         </IconButton>
 
-        <IconButton icon={downloadButton} download={invitationDocument}>
+        <IconButton icon={downloadButton} download={protocollDocument}>
           Protokoll der 34. BDK
         </IconButton>
 
