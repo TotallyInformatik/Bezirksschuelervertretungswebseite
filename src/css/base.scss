@@ -13,8 +13,11 @@
 
 body, html {
   min-height: 100%;
-  overflow-x: hidden;
   animation: blend-in 2s ease;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 * {
@@ -31,8 +34,43 @@ a {
   color: rgb(50, 50, 50);
 }
 
-.super-container {
-  height: auto;
+blockquote {
+  margin-top: 50px;
+  &::before, &::after {
+    line-height: 0.5;
+    display: block;
+    font-size: 100px;
+  }
+  &::before {
+    content: open-quote;
+    line-height: 0.5;
+  }
+  &::after {
+    margin-top: 50px;
+    content: close-quote;
+  }
+
+  font-size: 1.2em;
+  quotes: "“" "”" "‘" "’";
+}
+
+q {
+  &::before {
+    line-height: 1;
+    display: block;
+    font-size: 100px;
+  }
+  &::before {
+    content: open-quote;
+    line-height: 0.5;
+  }
+  &::after {
+    margin-top: 50px;
+    content: none;
+  }
+
+  font-size: 1.2em;
+  quotes: "“" "”" "‘" "’";
 }
 
 

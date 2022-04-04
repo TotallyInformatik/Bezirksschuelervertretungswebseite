@@ -19,7 +19,9 @@ class IconButton extends React.Component {
   }
 
   render() {
-    return <button className="icon-button" onClick={this.onClick} target="_blank">
+    return <button 
+      className="icon-button"
+      onClick={this.onClick} target="_blank">
       <div className="icon" style={{
         backgroundImage: `url(${this.icon})`,
         backgroundRepeat: "no-repeat",

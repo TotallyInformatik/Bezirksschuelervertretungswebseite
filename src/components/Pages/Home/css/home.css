@@ -15,7 +15,7 @@
 
 .landing-section {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   background-color: rgb(204, 127, 127);
   background-image: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%);
   display: flex;
@@ -24,9 +24,10 @@
 }
 
 .landing-section main {
-  overflow: hidden;
   width: 100%;
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   position: relative;
 }
 .landing-section main article {
@@ -78,6 +79,8 @@
   background-color: whitesmoke;
   width: 100%;
   display: flex;
+  position: relative;
+  z-index: 3;
 }
 .introduction-section .decoration-section {
   background-color: whitesmoke;
@@ -173,11 +176,46 @@
 
 .posts-section {
   background-color: whitesmoke;
+  top: 0;
   position: relative;
   z-index: 3;
-  padding: 100px;
+  height: auto;
+}
+.posts-section .posts-container {
+  top: 100px;
   display: flex;
-  gap: 50px;
+  gap: 150px;
+  padding: 100px;
+  overflow-x: auto;
+  transform: rotateZ(180deg);
+  direction: rtl;
+}
+.posts-section .posts-container .card-link {
+  text-align: left;
+  transform: rotateZ(180deg);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}
+.posts-section > article {
+  padding: 100px 200px;
+}
+.posts-section > article h2 {
+  font-size: 3em;
+}
+
+.conclusion-section {
+  position: relative;
+  z-index: 3;
+  background-image: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%), linear-gradient(90deg, rgb(204, 127, 127), rgb(204, 127, 127));
+  background-color: rgb(204, 127, 127);
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conclusion-section q {
+  font-size: 3em;
 }
 
 @media screen and (max-width: 1100px) {

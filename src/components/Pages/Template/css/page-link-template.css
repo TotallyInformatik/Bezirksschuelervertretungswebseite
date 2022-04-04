@@ -1,9 +1,9 @@
 .card-link {
   background-color: white;
   position: relative;
-  box-shadow: 0 100px 300px rgba(0, 0, 0, 0.2);
-  width: 500px;
-  height: 830px;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  height: 780px;
   overflow-y: hidden;
   border-bottom: 30px solid white;
   display: flex;
@@ -18,8 +18,8 @@
   right: 0;
 }
 .card-link img {
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   -o-object-fit: contain;
      object-fit: contain;
 }

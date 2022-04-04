@@ -1,16 +1,14 @@
 @import "./../../../../css/constants.scss";
+@import "./constants.scss";
 
 .card-link {
   background-color: white;
   position: relative;
 
-  box-shadow: 0 100px 300px $soft-shadow-color;
+  box-shadow: 0 50px 100px $soft-shadow-color;
 
-  $border-size: 30px;
-  $content-size: 300px;
-  $size: 500px;
   width: $size;
-  height: $size + $content-size + $border-size;
+  height: calc($size + $content-size + $border-size);
   overflow-y: hidden;
 
   border-bottom: $border-size solid white;

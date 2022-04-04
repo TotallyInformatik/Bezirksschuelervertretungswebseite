@@ -1,11 +1,11 @@
 import React from "react";
-import PageTemplate from "../Template/page-template";
-import IconButton from "../../reusables/IconButton/button";
+import PageTemplate from "./../../Template/page-template";
+import IconButton from "./../../../reusables/IconButton/button";
 
 import "./35-BDK.css";
 
 import bdkThumbnail from "./Sharepic-35-BDK-850x850.png";
-import downloadButton from "./../../../media/svgs/file_download_white_24dp.svg";
+import downloadButton from "./../../../../media/svgs/file_download_white_24dp.svg";
 import invitationDocument from "./Einladung-35.-BDK.pdf";
 import protocollDocument from "./Protokoll-34.-BDK-geschwaerzt.pdf";
 
