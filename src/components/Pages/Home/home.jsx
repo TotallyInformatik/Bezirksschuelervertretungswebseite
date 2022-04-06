@@ -19,6 +19,10 @@ import IndexDetailedLink from "../../reusables/Navigation/index-detailed-link";
 
 class Home extends React.Component {
 
+  functionlol() {
+
+  }
+
   render() {
 
     return (

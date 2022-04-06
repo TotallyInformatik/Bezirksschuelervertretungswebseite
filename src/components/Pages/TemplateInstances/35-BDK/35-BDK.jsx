@@ -40,11 +40,11 @@ class BDK35 extends React.Component {
 
         
 
-        <IconButton icon={downloadButton} download={invitationDocument}>
+        <IconButton icon={downloadButton} href={invitationDocument}>
           Einladung 35. BDK
         </IconButton>
 
-        <IconButton icon={downloadButton} download={protocollDocument}>
+        <IconButton icon={downloadButton} href={protocollDocument}>
           Protokoll der 34. BDK
         </IconButton>
 

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e810b2b2.css",
-    "main.js": "/static/js/main.a155047e.js",
+    "main.js": "/static/js/main.c264e5df.js",
     "static/media/Protokoll-34.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-34.-BDK-geschwaerzt.f42f4bb5bdff28cea357.pdf",
     "static/media/Protokoll-der-33.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-der-33.-BDK-geschwaerzt.07769bbf6a3d97f3576e.pdf",
     "static/media/Sharepic-35-BDK-850x850.png": "/static/media/Sharepic-35-BDK-850x850.e8bc3538c361dafabd92.png",
@@ -22,10 +22,10 @@
     "static/media/close_black_24dp.svg": "/static/media/close_black_24dp.244b66874c46718f7e0607d3acebaccf.svg",
     "static/media/menu_black_24dp.svg": "/static/media/menu_black_24dp.df9f5f63435f6f806dea9ea5fe96f927.svg",
     "main.e810b2b2.css.map": "/static/css/main.e810b2b2.css.map",
-    "main.a155047e.js.map": "/static/js/main.a155047e.js.map"
+    "main.c264e5df.js.map": "/static/js/main.c264e5df.js.map"
   },
   "entrypoints": [
     "static/css/main.e810b2b2.css",
-    "static/js/main.a155047e.js"
+    "static/js/main.c264e5df.js"
   ]
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, HashRouter } from 'react-router-dom';
 
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 import "./css/base.css"
@@ -16,6 +16,9 @@ import BDK35 from './components/Pages/TemplateInstances/35-BDK/35-BDK';
 import BDK34 from './components/Pages/TemplateInstances/34-BDK/34-BDK';
 import AktionsTagGerechteBildung from './components/Pages/TemplateInstances/AktionsTagGerechteBildung/AktionsTagGerechteBildung';
 import ZeroCovid from './components/Pages/TemplateInstances/Zero-Covid/ZeroCovid';
+import GlobalerKlimaStreik19_03_21 from './components/Pages/TemplateInstances/GlobalerKlimaStreik19_03_21/GlobalerKlimaStreik';
+import RedHandDay2021 from './components/Pages/TemplateInstances/RedHandDay_2021/RedHandDay';
+import DSSQ_06_12_20 from './components/Pages/TemplateInstances/KeinMeterFürQuerdenken/DSSQ06_12_20';
 
 
 AOS.init({
@@ -25,6 +28,7 @@ AOS.init({
 // weitere routes müssen noch hinzugefügt werden
 // TODO: dass die "aktuelles" route auf die 35 BDK Seite führt ist nur ein Test
 // TODO: 404 Page
+// TODO: icon replacement phosphoricons
 
 function TransitionContent() {
 
@@ -45,12 +49,18 @@ function TransitionContent() {
           <Route path="/reden" element={<Home />} />
           <Route path="/mach-mit" element={<Home />} />
           <Route path="/contact" element={<Home />} />
-          <Route path="*" element={<Home />}></Route> 
 
           <Route path="/34-bdk" element={<BDK34 type="page"/>}></Route>
           <Route path="/35-bdk" element={<BDK35 type="page"/>}></Route>
           <Route path="/aktionstag-gerechte-bildung" element={<AktionsTagGerechteBildung type="page" />}></Route>
+
           <Route path="/rede-zerocovid" element={<ZeroCovid type="page" />}></Route>
+          <Route path="/rede-globaler-klimastreik-19-03-21" element={<GlobalerKlimaStreik19_03_21 type="page" />}></Route>
+          <Route path="/rede-red-hand-day" element={<RedHandDay2021 type="page" />}></Route>
+          <Route path="/rede-dssq" element={<DSSQ_06_12_20 type="page" />}></Route>
+
+
+          <Route path="*" element={<Home />}></Route> 
 
         </Routes>
       </CSSTransition>
@@ -61,8 +71,8 @@ function TransitionContent() {
 
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
     <TransitionContent />
-  </Router>,
+  </HashRouter>,
   document.getElementById('root')
 );

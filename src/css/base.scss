@@ -14,9 +14,6 @@
 body, html {
   min-height: 100%;
   animation: blend-in 2s ease;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -25,13 +22,17 @@ body {
   padding: 0;
   box-sizing: border-box;
   word-wrap: break-all;
-  word-break:break-word;
+  word-break: break-word;
   hyphens: auto;
   font-family: 'Poppins', sans-serif;
 }
 
 a {
   color: rgb(50, 50, 50);
+}
+
+blockquote, q {
+  text-align: justify;
 }
 
 blockquote {

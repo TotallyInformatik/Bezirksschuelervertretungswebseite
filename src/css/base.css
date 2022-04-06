@@ -20,9 +20,6 @@ body, html {
   min-height: 100%;
   -webkit-animation: blend-in 2s ease;
           animation: blend-in 2s ease;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -40,6 +37,10 @@ body {
 
 a {
   color: rgb(50, 50, 50);
+}
+
+blockquote, q {
+  text-align: justify;
 }
 
 blockquote {
