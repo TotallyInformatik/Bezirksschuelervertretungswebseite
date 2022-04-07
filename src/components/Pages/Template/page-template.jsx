@@ -1,13 +1,10 @@
 import React from "react";
 
-import PageFooter from "../../reusables/Footer/footer";
-import Navigation from "../../reusables/Navigation/navigation";
 import $ from "jquery";
 
 import "./css/page-template.css";
 import "./css/page-link-template.css";
 import { NavLink } from "react-router-dom";
-import IndexHeaderLink from "../../reusables/Navigation/index-link";
 import PageWrapper from "../../reusables/page-wrapper";
 
 
@@ -41,6 +38,10 @@ class PageTemplate extends React.Component {
 
     this.setElementBasedOnType();
 
+  }
+
+  hasThumbnail() {
+    return this.thumbnail != null;
   }
 
   processAsLink() {
@@ -77,6 +78,11 @@ class PageTemplate extends React.Component {
 
   processAsPage() {
 
+    let backgroundText = [];
+    for (let i=0; i<5; i++) {
+      backgroundText.push(<h1 className="background-text">{this.title}</h1>);
+    }
+
     this.element = <PageWrapper>
       <main className="template-page">
             
@@ -85,13 +91,19 @@ class PageTemplate extends React.Component {
             <h1>
               {this.title}
             </h1>
-            <h3>
-              {this.title}
-            </h3>
+            <div className="transparent-text">
+            {
+              backgroundText
+            }
+            </div>
           </article>
-          <img src={this.thumbnail} alt={this.thumbnail_description} />
+          {
+            this.hasThumbnail() ? <img src={this.thumbnail} alt={this.thumbnail_description} /> : null
+          }
         </section>
-        <section className="template-content-section">
+        <section className="template-content-section" style={ !this.hasThumbnail() ? {                  
+          paddingTop: "100px"
+        } : {}}>
           <p className="upload-date">Hochgeladen am {this.publicationDate}</p>
 
           <article>

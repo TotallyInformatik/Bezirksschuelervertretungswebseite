@@ -11,19 +11,6 @@ linear-gradient(312deg, transparent 0%, transparent 24%,rgba(93, 93, 93,0.02) 24
 linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
 
 
-
-.transparent-text {
-  h1 {
-    -webkit-touch-callout: none;
-    user-select: none;
-    color: rgba(255, 255, 255, 0.2);  
-    word-wrap: initial;
-    word-break:initial;
-    hyphens: initial;
-  }
-}
-
-
 .landing-section {
   position: relative;
   z-index: 4;
@@ -83,9 +70,8 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
     right: 0;
 
     h1 {
-      font-size: 50em;
-      transform: rotateZ(45deg);
-      line-height: 1.1;
+      font-size: 40em;
+      line-height: 0.9;
     }
 
   }
@@ -159,6 +145,7 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
           display: none;
         }
         p {
+          text-align: left;
           flex: 2;
           margin-left: 40px;
           font-size: 1.8em;
@@ -229,12 +216,9 @@ linear-gradient(90deg, $accent-color, rgb(204, 127, 127));
     gap: 150px;
     padding: 100px;
     overflow-x: auto;
-    transform: rotateZ(180deg);
-    direction: rtl;
 
     .card-link {
       text-align: left;
-      transform: rotateZ(180deg);
       box-shadow: 0 20px 80px $soft-shadow-color;
     }
 

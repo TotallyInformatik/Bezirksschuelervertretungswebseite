@@ -38,8 +38,6 @@ class PageFooter extends React.Component {
         </section>
         <section className="credit-section">
           <p>©2022 bsv-duesseldorf.de</p>
-          <p>Webseite von Rui Zhang</p>
-          <p>Vertreten durch Johannes</p>
         </section>
 
       </footer>

@@ -31,7 +31,7 @@ class BDK35 extends React.Component {
         </p>
 
         <p>
-          Sie findet am 20.01.22 in der Aula des <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">Leibniz Gymnasiums</a> statt.
+          Sie findet am 20.01.22 in der Aula des <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">{">"}Leibniz Gymnasiums{"<"}</a> statt.
         </p>
 
         <p>

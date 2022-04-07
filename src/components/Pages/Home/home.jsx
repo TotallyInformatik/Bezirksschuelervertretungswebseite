@@ -3,7 +3,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import ScrollIndicator from "../../reusables/ScrollIndicator/scroll-indicator";
 
-import "./../../../css/base.css";
 import "./css/home.css";
 
 

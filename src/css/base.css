@@ -16,6 +16,20 @@
     opacity: 1;
   }
 }
+.transparent-text * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: rgba(255, 255, 255, 0.2);
+  word-wrap: initial;
+  word-break: initial;
+  -webkit-hyphens: initial;
+      -ms-hyphens: initial;
+          hyphens: initial;
+}
+
 body, html {
   min-height: 100%;
   -webkit-animation: blend-in 2s ease;
@@ -33,6 +47,10 @@ body, html {
       -ms-hyphens: auto;
           hyphens: auto;
   font-family: "Poppins", sans-serif;
+}
+
+p {
+  text-align: justify;
 }
 
 a {

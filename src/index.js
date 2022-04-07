@@ -19,6 +19,10 @@ import ZeroCovid from './components/Pages/TemplateInstances/Zero-Covid/ZeroCovid
 import GlobalerKlimaStreik19_03_21 from './components/Pages/TemplateInstances/GlobalerKlimaStreik19_03_21/GlobalerKlimaStreik';
 import RedHandDay2021 from './components/Pages/TemplateInstances/RedHandDay_2021/RedHandDay';
 import DSSQ_06_12_20 from './components/Pages/TemplateInstances/KeinMeterFürQuerdenken/DSSQ06_12_20';
+import BezirksvorstandssitzungenOnline from './components/Pages/TemplateInstances/BezirksvorstandssitzungenOnline/OnlineSitzungenBSV';
+import Arbeitsprogramm2020_21 from './components/Pages/TemplateInstances/Arbeitsprogramm2020/Arbeitsprogramm2020_21';
+import BDK33 from './components/Pages/TemplateInstances/33-BDK/33-BDK';
+import Page404 from './components/Pages/404/404NotFound';
 
 
 AOS.init({
@@ -50,9 +54,13 @@ function TransitionContent() {
           <Route path="/mach-mit" element={<Home />} />
           <Route path="/contact" element={<Home />} />
 
+          <Route path="/einladung-32-bdk-6-6-2020/" element={<BDK33 type="page" />}></Route>
           <Route path="/34-bdk" element={<BDK34 type="page"/>}></Route>
           <Route path="/35-bdk" element={<BDK35 type="page"/>}></Route>
+
           <Route path="/aktionstag-gerechte-bildung" element={<AktionsTagGerechteBildung type="page" />}></Route>
+          <Route path="/bezirksvorstandssitzungen-online" element={<BezirksvorstandssitzungenOnline type="page" />}></Route>
+          <Route path="/arbeitsprogramm-2020-21" element={<Arbeitsprogramm2020_21 type="page" />}></Route>
 
           <Route path="/rede-zerocovid" element={<ZeroCovid type="page" />}></Route>
           <Route path="/rede-globaler-klimastreik-19-03-21" element={<GlobalerKlimaStreik19_03_21 type="page" />}></Route>
@@ -60,7 +68,7 @@ function TransitionContent() {
           <Route path="/rede-dssq" element={<DSSQ_06_12_20 type="page" />}></Route>
 
 
-          <Route path="*" element={<Home />}></Route> 
+          <Route path="*" element={<Page404 />}></Route> 
 
         </Routes>
       </CSSTransition>

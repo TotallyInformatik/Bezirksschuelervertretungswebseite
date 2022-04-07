@@ -19,30 +19,34 @@ $heading-padding: 100px;
     min-height: 60%;
     height: auto;
     padding: $heading-padding;
+    overflow-x: hidden;
     
-    h1 {
-      position: relative;
+    > h1 {
       z-index: 3;
       font-size: 5em;
       color: white;
     }
 
-    h3 {
-      user-select: none;
+    .transparent-text {
+      top: 0;
       position: absolute;
-      font-size: 7em;
-      color: white;
-      opacity: 0.1;
-      z-index: 1;
-      top: calc($heading-padding + 5%);
-      left: 5% * 2;
+      z-index: 0;
+      width: fit-content;
+      height: 100vh;
+      overflow: hidden;
+      h1 {
+        font-size: 20em;
+        line-height: 1;
+        position: relative;
+        left: 35vw;
+      }
     }
 
   }
 
   img {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     top: calc(#{$image-size} / 2);
     width: $image-size;
@@ -58,6 +62,8 @@ $heading-padding: 100px;
 }
 
 .template-content-section {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
   background-color: whitesmoke;
@@ -75,7 +81,7 @@ $heading-padding: 100px;
       margin: 50px 0 20px 0;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1.1em;
       margin-bottom: 20px;
     }
 

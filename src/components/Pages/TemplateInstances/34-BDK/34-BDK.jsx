@@ -31,7 +31,7 @@ class BDK34 extends React.Component {
         </p>
 
         <p>
-          Sie findet am 04.11.21 am <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">Leibniz Gymnasium</a> statt.
+          Sie findet am 04.11.21 am <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">{">"}Leibniz Gymnasium{"<"}</a> statt.
         </p>
 
         <p>
