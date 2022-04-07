@@ -20,7 +20,7 @@ class Page404 extends React.Component {
             </NavLink>
           </article>
         </section>
-        <div className="transparent-text">
+        <div className="transparent-text transparent-text-404">
             <h1>404</h1>
             <h1>404</h1>
             <h1>404</h1>

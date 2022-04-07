@@ -1,6 +1,6 @@
 @import "./../../../css/constants.scss";
 
-.transparent-text {
+.transparent-text.transparent-text-404 {
   position: absolute;
   top: 0;
   right: 0;
@@ -11,7 +11,6 @@
   height: 100vh;
   min-height: 700px;
   overflow:hidden;
-
 }
 
 .transparent-text h1 {

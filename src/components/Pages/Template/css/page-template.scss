@@ -50,7 +50,6 @@ $heading-padding: 100px;
 
     top: calc(#{$image-size} / 2);
     width: $image-size;
-    height: $image-size;
     object-fit: contain;
 
     margin-left: calc(50% - #{$image-size / 2});
@@ -83,6 +82,10 @@ $heading-padding: 100px;
     p {
       font-size: 1.1em;
       margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-bottom: 25px;
     }
 
   }

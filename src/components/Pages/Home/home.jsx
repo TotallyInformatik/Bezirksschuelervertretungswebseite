@@ -12,7 +12,7 @@ import BDK35 from "./../TemplateInstances/35-BDK/35-BDK";
 import PageWrapper from "../../reusables/page-wrapper";
 import AktionsTagGerechteBildung from "../TemplateInstances/AktionsTagGerechteBildung/AktionsTagGerechteBildung";
 import ZeroCovid from "../TemplateInstances/Zero-Covid/ZeroCovid";
-import IndexDetailedLink from "../../reusables/Navigation/index-detailed-link";
+import ResolutionAbschiebungen from "../TemplateInstances/ResolutionAbschiebungen/ResolutionAbschiebungen";
 
 // TODO: link für machmit!!
 
@@ -129,12 +129,11 @@ class Home extends React.Component {
 
         <section className="posts-section">
           <div className="posts-container">
-            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
-              <BDK34 type="link" />
-            </div>
+            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="0"><BDK34 type="link" /></div>
             <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="100"><BDK35 type="link" /></div>
             <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="200"><AktionsTagGerechteBildung type="link" /></div>
             <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><ZeroCovid type="link" /></div>
+            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><ResolutionAbschiebungen type="link" /></div>
 
 
           </div>

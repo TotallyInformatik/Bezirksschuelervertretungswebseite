@@ -23,6 +23,8 @@ import BezirksvorstandssitzungenOnline from './components/Pages/TemplateInstance
 import Arbeitsprogramm2020_21 from './components/Pages/TemplateInstances/Arbeitsprogramm2020/Arbeitsprogramm2020_21';
 import BDK33 from './components/Pages/TemplateInstances/33-BDK/33-BDK';
 import Page404 from './components/Pages/404/404NotFound';
+import ResolutionWirtschaftAlsFach from './components/Pages/TemplateInstances/ResolutionWirtschaftAlsFach/ResolutionWirtschaftAlsFach';
+import ResolutionAbschiebungen from './components/Pages/TemplateInstances/ResolutionAbschiebungen/ResolutionAbschiebungen';
 
 
 AOS.init({
@@ -31,7 +33,6 @@ AOS.init({
 
 // weitere routes müssen noch hinzugefügt werden
 // TODO: dass die "aktuelles" route auf die 35 BDK Seite führt ist nur ein Test
-// TODO: 404 Page
 // TODO: icon replacement phosphoricons
 
 function TransitionContent() {
@@ -62,11 +63,13 @@ function TransitionContent() {
           <Route path="/bezirksvorstandssitzungen-online" element={<BezirksvorstandssitzungenOnline type="page" />}></Route>
           <Route path="/arbeitsprogramm-2020-21" element={<Arbeitsprogramm2020_21 type="page" />}></Route>
 
+          <Route path="/wirtschaft-als-fach" element={<ResolutionWirtschaftAlsFach type="page" />}></Route>
+          <Route path="/resolution-abschiebungen" element={<ResolutionAbschiebungen type="page" />}></Route>
+
           <Route path="/rede-zerocovid" element={<ZeroCovid type="page" />}></Route>
           <Route path="/rede-globaler-klimastreik-19-03-21" element={<GlobalerKlimaStreik19_03_21 type="page" />}></Route>
           <Route path="/rede-red-hand-day" element={<RedHandDay2021 type="page" />}></Route>
           <Route path="/rede-dssq" element={<DSSQ_06_12_20 type="page" />}></Route>
-
 
           <Route path="*" element={<Page404 />}></Route> 
 

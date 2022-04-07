@@ -26,9 +26,6 @@ class PageFooter extends React.Component {
           <p>
             E-Mail: info@bsv-duesseldorf.de
           </p>
-          <a>
-            Impressum
-          </a>
         </section>
         <section className="link-section">
           <a className="email link-icon" href="mailto:info@bsv-duesseldorf.de"></a>
