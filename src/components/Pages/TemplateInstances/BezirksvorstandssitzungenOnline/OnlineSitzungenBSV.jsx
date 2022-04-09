@@ -1,20 +1,21 @@
 import React from "react";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 class BezirksvorstandssitzungenOnline extends React.Component {
 
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Bezirksvorstandssitzungen Online"
         timeOfPublishment="Dezember 1, 2020"
         type={this.type}
-        to="/bezirksvorstandssitzungen-online"
+        to={this.to}
       >
 
         <p>
@@ -26,7 +27,7 @@ class BezirksvorstandssitzungenOnline extends React.Component {
           Bis dann!
         </p>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

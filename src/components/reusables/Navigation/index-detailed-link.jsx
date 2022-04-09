@@ -37,7 +37,6 @@ class IndexDetailedLink extends React.Component {
               onClick={this.closeSubMenu}
             ></div>
             <ul>
-              <IndexHeaderLink link={this.props.link} display={"> " + this.props.display} />
               {this.props.children}
             </ul>
           </nav>

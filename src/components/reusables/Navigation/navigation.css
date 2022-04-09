@@ -72,7 +72,7 @@ nav .menu-button {
   padding: 50px 50px;
   list-style-type: none;
 }
-.navigation-link-detailed .sub-menu ul li {
+.navigation-link-detailed .sub-menu ul .navigation-link {
   cursor: pointer;
   margin-right: 0;
   margin-left: 0;
@@ -84,7 +84,7 @@ nav .menu-button {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-.navigation-link-detailed .sub-menu ul li:hover, .navigation-link-detailed .sub-menu ul li:focus {
+.navigation-link-detailed .sub-menu ul .navigation-link:hover, .navigation-link-detailed .sub-menu ul .navigation-link:focus {
   margin-left: 10px;
   margin-right: -10px;
 }

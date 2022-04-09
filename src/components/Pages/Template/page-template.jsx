@@ -6,9 +6,10 @@ import "./css/page-template.css";
 import "./css/page-link-template.css";
 import { NavLink } from "react-router-dom";
 import PageWrapper from "../../reusables/page-wrapper";
+import ScrollIndicator from "../../reusables/ScrollIndicator/scroll-indicator";
 
 
-class PageTemplate extends React.Component {
+class PostTemplate extends React.Component {
 
   static defaultProps = {
     title: "",
@@ -25,6 +26,7 @@ class PageTemplate extends React.Component {
     super(props);
 
     this.type = this.props.type; //! Very important -> defines whether the component will be a page or a link
+
     this.color = this.props.color; // string representing the accent color of the page
 
     this.element = <div>placeholder</div>;
@@ -35,10 +37,8 @@ class PageTemplate extends React.Component {
     this.contents = this.props.children;
     this.publicationDate = this.props.timeOfPublishment;
     this.to = this.props.to;
-
-    this.setElementBasedOnType();
-
   }
+
 
   hasThumbnail() {
     return this.thumbnail != null;
@@ -48,14 +48,14 @@ class PageTemplate extends React.Component {
 
     this.linkElementRef = React.createRef();
 
-    this.element = <div className="card-link-wrapper">
+    this.element = <div className="card-link-wrapper" >
         <NavLink to={this.to} onClick={() => window.scrollTo({
         top: 0,
         left: 0,
         behavior: "smooth"
       })}>
-        <div className="card-link" ref={this.linkElementRef}>
-          <img src={this.thumbnail} alt={this.thumbnail_description} />
+        <div className="card-link" ref={this.linkElementRef} data-title={this.title}>
+          {this.hasThumbnail() ? <img src={this.thumbnail} alt={this.thumbnail_description} /> : null}
           <section>
             <article className="heading-info">
               <h4>
@@ -68,8 +68,8 @@ class PageTemplate extends React.Component {
                 {this.contents}
               </p>
             </article>
+            <div className="fade"></div>
           </section>
-          <div className="fade"></div>
         </div>
       </NavLink>
     </div>;
@@ -79,24 +79,35 @@ class PageTemplate extends React.Component {
   processAsPage() {
 
     let backgroundText = [];
-    for (let i=0; i<5; i++) {
-      backgroundText.push(<h1 className="background-text">{this.title}</h1>);
+    for (let i=0; i<3; i++) {
+      backgroundText.push(<h1 key={i} className="background-text">{this.title}</h1>);
     }
 
+    let landingSectionStyles = {backgroundColor: this.color};
+    if (this.hasThumbnail()) {
+      landingSectionStyles["padding-bottom"] = "400px";
+    }
+
+
     this.element = <PageWrapper>
-      <main className="template-page">
+      <main className="template-post">
             
-        <section className="template-landing-section" style={{backgroundColor: this.color}}>
+        <section className="template-landing-section" style={landingSectionStyles}>
           <article>
             <h1>
               {this.title}
             </h1>
-            <div className="transparent-text">
+          </article>
+          <div className="transparent-text">
             {
               backgroundText
             }
-            </div>
-          </article>
+          </div>
+          {
+            this.hasThumbnail() ? null : <ScrollIndicator />
+          }
+        </section>
+        <section className="template-image-section">
           {
             this.hasThumbnail() ? <img src={this.thumbnail} alt={this.thumbnail_description} /> : null
           }
@@ -139,6 +150,7 @@ class PageTemplate extends React.Component {
   }
 
   render() { 
+    this.setElementBasedOnType();
     return this.element; 
   }
 
@@ -151,8 +163,8 @@ class PageTemplate extends React.Component {
       pageContentsArticle.empty();
 
       for (let contentElement of pageContents) {
-        if (PageTemplate.abbreviatedContentElements.includes(contentElement.tagName)) {
-          pageContentsArticle.append(contentElement.innerText + " ");
+        if (PostTemplate.abbreviatedContentElements.includes(contentElement.tagName)) {
+          pageContentsArticle.append(contentElement.innerText + "");
         }
 
       }
@@ -163,4 +175,4 @@ class PageTemplate extends React.Component {
 
 }
 
-export default PageTemplate;
+export default PostTemplate;

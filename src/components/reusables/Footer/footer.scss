@@ -4,12 +4,17 @@ footer {
   position: relative;
   z-index: 4;
   color: white;
+
+  * {
+    text-align: left;
+  }
+
   a { 
     color: whitesmoke; 
     cursor: pointer;
     text-decoration: underline;
   }
-  padding: 50px 20%;
+  padding: 50px 300px;
 
   display: grid;
   grid-template-areas: 
@@ -65,10 +70,10 @@ footer {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 
   footer {
-    padding: 50px 5%;
+    padding: 50px 100px;
 
     .link-section {
       padding: 0 0 0 50px;
@@ -78,10 +83,11 @@ footer {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
 
   footer {
 
+    padding: 50px 50px;
     display: block;
 
     .link-section {
@@ -95,6 +101,16 @@ footer {
       gap: 10px;
 
     }
+
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  footer {
+
+    padding: 50px 30px;
 
   }
 

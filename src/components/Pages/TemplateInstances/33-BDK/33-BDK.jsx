@@ -1,20 +1,21 @@
 import React from "react";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 class BDK33 extends React.Component {
 
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Einladung 33. BDK 28.10.2020"
         timeOfPublishment="Januar 15, 2020"
         type={this.type}
-        to="/einladung-32-bdk-6-6-2020"
+        to={this.to}
       >
 
         <p>
@@ -58,7 +59,7 @@ class BDK33 extends React.Component {
           Das Ende der BDK ist für 15:30 Uhr angesetzt.
         </p>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

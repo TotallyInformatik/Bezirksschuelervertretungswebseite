@@ -1,6 +1,6 @@
 import React from "react";
 import IconButton from "../../../reusables/IconButton/button";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import downloadButton from "./../../../../media/svgs/file_download_white_24dp.svg";
 import arbeitsprogrammDocument from "./APO-20_21-BSV_Ddorf.pdf";
@@ -10,15 +10,16 @@ class Arbeitsprogramm2020_21 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Arbeitsprogramm 2020/21"
         timeOfPublishment="Oktober 28, 2020"
         type={this.type}
-        to="/arbeitsprogramm-2020-21"
+        to={this.to}
       >
 
         <p>
@@ -47,7 +48,7 @@ class Arbeitsprogramm2020_21 extends React.Component {
 
         <IconButton icon={downloadButton} href={arbeitsprogrammDocument}>PDF-Datei</IconButton>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

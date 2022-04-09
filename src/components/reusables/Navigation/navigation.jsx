@@ -52,20 +52,19 @@ class Navigation extends React.Component {
             <IndexHeaderLink link="/resolution-abschiebungen" display="Resolution Abschiebungen" />
             <IndexHeaderLink link="/lgbtq" display="Resolution LGBTQ+" />
           </IndexDetailedLink>
-          <IndexDetailedLink link="/resolutionen" display="Reden">
+          <IndexDetailedLink link="/reden" display="Reden">
             <IndexHeaderLink link="/wirtschaft-als-fach" display="Rede zum ZeroCovid-Aktionstag" />
             <IndexHeaderLink link="/resolution-abschiebungen" display="Rede zum globalen Klimastreik" />
             <IndexHeaderLink link="/lgbtq" display="Rede zum Red Hand Day" />
             <IndexHeaderLink link="/lgbtq" display='Rede zur "Kein Meter für Querdenken!" - Kundgebung' />
           </IndexDetailedLink>
           <IndexHeaderLink link="/mach-mit" display="Mach Mit!" />
-          <IndexDetailedLink link="/resolutionen" display="Kontakt">
+          <IndexDetailedLink link="/contact" display="Kontakt">
             <li><a href="mailto:info@bsv-duesseldorf.de">E-mail</a></li>
             <li><a href="https://www.instagram.com/bsv.duesseldorf/">Instagram</a></li>
             <li><a href="https://www.facebook.com/bsvduesseldorf">Facebook</a></li>
             <li><a href="https://twitter.com/BsvDusseldorf">Twitter</a></li>
           </IndexDetailedLink>
-          <ScrollIndicator></ScrollIndicator>
         </ul>
       </nav>
     );

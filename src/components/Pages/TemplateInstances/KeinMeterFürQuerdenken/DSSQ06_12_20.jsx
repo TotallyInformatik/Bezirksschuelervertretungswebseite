@@ -1,6 +1,6 @@
 import React from "react";
 import IconButton from "../../../reusables/IconButton/button";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import thumbnailPic from "./126310535_225383175594436_5190585428344598414_n-850x850.jpg";
 import facebookIcon from "./../../../../media/svgs/facebookFeather.svg";
@@ -10,17 +10,18 @@ class DSSQ_06_12_20 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Rede zur „Kein Meter für Querdenken!“ Kundgebung am 06.12.20"
         thumbnail={thumbnailPic}
         thumbnail_description="Sharepic für die Kundgebung"
         timeOfPublishment="Dezember 6, 2020"
         type={this.type}
-        to="/rede-dssq"
+        to={this.to}
         color="#477057"
       >
 
@@ -48,7 +49,7 @@ class DSSQ_06_12_20 extends React.Component {
 
         <IconButton icon={facebookIcon} href="https://www.facebook.com/duesseldorfstelltsichquer/videos/781710676024693/">Die Rede auf FaceBook</IconButton>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

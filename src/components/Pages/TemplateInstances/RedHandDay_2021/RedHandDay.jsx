@@ -1,6 +1,6 @@
 import React from "react";
 import IconButton from "../../../reusables/IconButton/button";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import thumbnailPic from "./InstaFB-Feed-4-850x850.png";
 import youtubeIcon from "./../../../../media/svgs/youtube-logo.svg";
@@ -10,17 +10,18 @@ class RedHandDay2021 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Rede zum Red Hand Day 2021"
         thumbnail={thumbnailPic}
         thumbnail_description="Sharepic für den Red Hand Day"
         timeOfPublishment="Februar 12, 2021"
         type={this.type}
-        to="/rede-red-hand-day"
+        to={this.to}
         color="#871224"
       >
 
@@ -51,7 +52,7 @@ class RedHandDay2021 extends React.Component {
 
         <IconButton icon={youtubeIcon} href="https://www.youtube.com/watch?v=2jGIeMzBMhA&ab_channel=DFGVKNRW2">Die Rede auf Youtube</IconButton>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

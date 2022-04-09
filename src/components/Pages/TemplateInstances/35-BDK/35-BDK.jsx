@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "./../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 import IconButton from "./../../../reusables/IconButton/button";
 
 import "./35-BDK.css";
@@ -14,17 +14,18 @@ class BDK35 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Einladung zur 35. Bezirksdelegiertenkonferenz"
         thumbnail={bdkThumbnail}
         thumbnail_description="Sharepic für die Einladung zur 35. BDK"
         timeOfPublishment="Januar 11, 2022"
         type={this.type}
-        to="/35-bdk"
+        to={this.to}
       >
         <p>
           Die 35. BDK der BSV Düsseldorf steht an.
@@ -48,7 +49,7 @@ class BDK35 extends React.Component {
           Protokoll der 34. BDK
         </IconButton>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

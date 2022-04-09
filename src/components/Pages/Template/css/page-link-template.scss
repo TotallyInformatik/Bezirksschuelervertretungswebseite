@@ -2,6 +2,8 @@
 @import "./constants.scss";
 
 .card-link {
+  $size: 450px;
+
   background-color: white;
   position: relative;
 
@@ -28,7 +30,7 @@
   img {
     width: $size;
     height: $size;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   section {

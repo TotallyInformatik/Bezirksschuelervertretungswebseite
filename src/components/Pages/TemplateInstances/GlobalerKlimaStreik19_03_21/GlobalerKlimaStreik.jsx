@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import thumbnailPic from "./160309302_286655146173350_3730911114197236186_n-850x850.jpg";
 
@@ -8,17 +8,18 @@ class GlobalerKlimaStreik19_03_21 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Rede zum globalen Klimastreik am 19.03.21"
         thumbnail={thumbnailPic}
         thumbnail_description="Sharepic für den globalen Klimastreik"
         timeOfPublishment="März 21, 2021"
         type={this.type}
-        to="/rede-globaler-klimastreik-19-03-21"
+        to={this.to}
         color="#6E012F"
       >
 
@@ -40,7 +41,7 @@ class GlobalerKlimaStreik19_03_21 extends React.Component {
           Lasst uns deshalb zusammen Kämpfen für ein System, das Mensch und Natur nicht für bloße Profite ausbeutet! Ein System, in dem die physische und psychische Gesundheit an erster Stelle steht und in dem sich die Selbstverwirklichung des Einzelnen [.. .] [nicht] den wirtschaftlichen Interessen weniger unterordnen muss. Dieses Ziel können wir letztlich nur in Solidarität mit den Arbeiter*innen erreichen, und zwar in dem wir gemeinsam auf die Straße gehen und zusammen für ein gesünderes System kämpfen, sowohl für Mensch, Tier als auch die Natur an sich. Dankeschön.<br/><br/>
         </blockquote>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

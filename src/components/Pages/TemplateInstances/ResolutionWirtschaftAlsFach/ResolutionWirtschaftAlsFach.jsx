@@ -1,20 +1,21 @@
 import React from "react";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 class ResolutionWirtschaftAlsFach extends React.Component {
 
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Resolution Wirtschaft als Fach"
         timeOfPublishment="Februar 4, 2018"
         type={this.type}
-        to="/wirtschaft-als-fach"
+        to={this.to}
       >
 
         <p>
@@ -55,7 +56,7 @@ class ResolutionWirtschaftAlsFach extends React.Component {
           Wir wollen solidarisch miteinander lernen und leben.
         </p>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import thumbnail from "./IMG_20180123_171114-1024x575.jpg";
 
@@ -8,22 +8,23 @@ class ResolutionAbschiebungen extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Resolution Abschiebungen"
         timeOfPublishment="Januar 17, 2018"
         thumbnail={thumbnail}
         type={this.type}
-        to="/resolution-abschiebungen"
+        to={this.to}
       >
 
         <p>
           Hier findet ihr unsere von der BDK (Bezirksdelegiertenkonferenz) gewählte Resolution zum Thema Abschiebungen nach Afghanistan.<br /><br />
 
-          Nein zur Abschiebung in Kriegsgebiete – sichere Perspektiven für unsere Mitschüler*innen!<br /><br />
+          <b>Nein zur Abschiebung in Kriegsgebiete – sichere Perspektiven für unsere Mitschüler*innen!</b><br /><br />
 
           Seit der kurzzeitigen Öffnung der deutschen Grenzen und der Aufnahme von mehreren Hunderttausend vor Krieg, Folter und Not geflohenen Menschen im Spätsommer 2015 sind in vielen Düsseldorfer Schulen Flüchtlingsklassen eingerichtet worden, um vor Allem den schulpflichtigen Flüchtlingen eine Beschulung zu ermöglichen. Mitschüler*innen mit zum Teil traumatisierenden Verlust-, Kriegs- und Fluchterfahrungen und einer Biografie, die für viele „deutsche“ Schüler*innen fremd ist. und, bereichern seitdem unsere Klassenräume und Flure. Seit 2015 haben sich viele Schüler*innen Düsseldorfs engagiert, um ihre neuen Mitschüler*innen und deren Familien in unserer Stadt willkommen zu heißen und ihnen das Ankommen und „Reinkommen“ in ihre neue Umwelt zu erleichtern.<br /><br />
 
@@ -61,7 +62,7 @@ class ResolutionAbschiebungen extends React.Component {
           </ul>
         </p>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 
