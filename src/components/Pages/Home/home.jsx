@@ -39,7 +39,7 @@ class Home extends React.Component {
       count--;
 
       mostRecentPosts.push(
-        <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay={`${100 * i}`}>
+        <div key={postLink} className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay={`${100 * i}`}>
           <PostComponent type="link" to={postLink}/>
         </div>
       );
@@ -192,16 +192,21 @@ class Home extends React.Component {
 
     /// progress bar movement when scrolling
     $(window).on("scroll", (e) => {
-      let start = $(this.introSectionRef.current).offset().top;
-      let end = $(this.introSectionRef.current).offset().top + $(this.introSectionRef.current).height();
-      let current = $(window).scrollTop() - ($(window).innerHeight() / 2);
+      try {
+        let introSectionElement = $(this.introSectionRef.current);
+        let start = introSectionElement.offset().top;
+        let end = introSectionElement.offset().top + introSectionElement.height();
+        let current = $(window).scrollTop() - ($(window).innerHeight() / 2);
+  
+        let progress = current / (end - start) * 100;
+  
+        if (progress > -10 && progress < 110) {
+          $(this.progressbarRef.current).css({
+            height: progress + "%"
+          });
+        }
+      } catch (exception) {
 
-      let progress = current / (end - start) * 100;
-
-      if (progress > -10 && progress < 110) {
-        $(this.progressbarRef.current).css({
-          height: progress + "%"
-        });
       }
 
     });

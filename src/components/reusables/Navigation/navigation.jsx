@@ -6,7 +6,8 @@ import IndexDetailedLink from "./index-detailed-link";
 import "./navigation.css";
 import menuIcon from "./menu_black_24dp.svg";
 import closeIcon from "./close_black_24dp.svg";
-import ScrollIndicator from "../ScrollIndicator/scroll-indicator";
+import PostContext from "../../../PostContext";
+
 
 class Navigation extends React.Component {
 
@@ -22,17 +23,39 @@ class Navigation extends React.Component {
     this.setState({
       menuOpen: !this.state.menuOpen
     });
-    console.log(this.state.menuOpen);
   }
 
   render() {
+
+    const resolutionen = [];
+    const dokumente = [];
+    const reden = [];
+    
+    for (let resolution of this.context.resolutions) {
+      let link = resolution[1];
+      let title = resolution[2];
+      resolutionen.push(<IndexHeaderLink key={link} link={link} display={title} />);
+    }
+
+    for (let rede of this.context.speeches) {
+      let link = rede[1];
+      let title = rede[2];
+      reden.push(<IndexHeaderLink key={link} link={link} display={title} />);
+    }
+    
+    for (let dokument of this.context.documents) {
+      let link = dokument[1];
+      let title = dokument[2];
+      dokumente.push(<IndexHeaderLink key={link} link={link} display={title} />);
+    }
+
+
     return(
       <nav>
         <div 
           className="menu-button" 
           title="menu" 
           onClick={this.toggleMenu}
-          // TODO: Background Image does not fully work
           style={{
             backgroundImage: this.state.menuOpen ? menuIcon : closeIcon
           }}
@@ -43,20 +66,13 @@ class Navigation extends React.Component {
           <IndexHeaderLink link="/" display="Home" />
           <IndexHeaderLink link="/aktuelles" display="Aktuelles" />
           <IndexDetailedLink link="/dokumente" display="Dokumente">
-            <IndexHeaderLink link="/arbeitsprogramm-2020-21" display="Arbeitsprogramm 2020/2021" />
-            <IndexHeaderLink link="/satzung" display="Satzung" />
-            <IndexHeaderLink link="/wahl-und-geschaeftsordnung" display="Wahl- und Geschäftsordnung" />
+            {dokumente}
           </IndexDetailedLink>
           <IndexDetailedLink link="/resolutionen" display="Resolutionen">
-            <IndexHeaderLink link="/wirtschaft-als-fach" display="Resolution Wirtschaft als Fach" />
-            <IndexHeaderLink link="/resolution-abschiebungen" display="Resolution Abschiebungen" />
-            <IndexHeaderLink link="/lgbtq" display="Resolution LGBTQ+" />
+            {resolutionen}
           </IndexDetailedLink>
           <IndexDetailedLink link="/reden" display="Reden">
-            <IndexHeaderLink link="/wirtschaft-als-fach" display="Rede zum ZeroCovid-Aktionstag" />
-            <IndexHeaderLink link="/resolution-abschiebungen" display="Rede zum globalen Klimastreik" />
-            <IndexHeaderLink link="/lgbtq" display="Rede zum Red Hand Day" />
-            <IndexHeaderLink link="/lgbtq" display='Rede zur "Kein Meter für Querdenken!" - Kundgebung' />
+            {reden}
           </IndexDetailedLink>
           <IndexHeaderLink link="/mach-mit" display="Mach Mit!" />
           <IndexDetailedLink link="/contact" display="Kontakt">
@@ -71,5 +87,8 @@ class Navigation extends React.Component {
   }
 
 }
+
+
+Navigation.contextType = PostContext;
 
 export default Navigation;

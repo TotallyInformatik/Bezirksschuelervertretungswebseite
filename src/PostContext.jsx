@@ -1,6 +1,6 @@
 import React from "react";
-import BDK33 from "./components/Pages/TemplateInstances/33-BDK/33-BDK";
 
+import BDK33 from "./components/Pages/TemplateInstances/33-BDK/33-BDK";
 import BDK34 from "./components/Pages/TemplateInstances/34-BDK/34-BDK";
 import BDK35 from "./components/Pages/TemplateInstances/35-BDK/35-BDK";
 import AktionsTagGerechteBildung from "./components/Pages/TemplateInstances/AktionsTagGerechteBildung/AktionsTagGerechteBildung";
@@ -37,20 +37,20 @@ const allPosts = [
   [Satzung, "/satzung"]
 ];
 const allResolutions = [
-  [ResolutionWirtschaftAlsFach, "/wirtschaft-als-fach"],
-  [ResolutionAbschiebungen, "/resolution-abschiebungen"],
-  [ResolutionLGBTQ, "/lgbtq"]
+  [ResolutionWirtschaftAlsFach, "/wirtschaft-als-fach", "Resolution Wirtschaft als Fach"],
+  [ResolutionAbschiebungen, "/resolution-abschiebungen", "Resolution Abschiebungen"],
+  [ResolutionLGBTQ, "/lgbtq", "Resolution LGBTQ+"],
 ];
 const allSpeeches = [
   [ZeroCovid, "/rede-zerocovid"],
-  [GlobalerKlimaStreik19_03_21, "/rede-globaler-klimastreik-19-03-21"],
-  [RedHandDay2021, "/rede-red-hand-day"],
-  [DSSQ_06_12_20, "/rede-dssq"]
+  [GlobalerKlimaStreik19_03_21, "/rede-globaler-klimastreik-19-03-21", "Rede zum globalen Klimastreik"],
+  [RedHandDay2021, "/rede-red-hand-day", "Rede zum Red Hand Day"],
+  [DSSQ_06_12_20, "/rede-dssq", "Rede zur 'Kein Meter für Querdenken!' - Kundgebung"]
 ];
 const allDocuments = [
-  [Arbeitsprogramm2020_21, "/arbeitsprogramm-2020-21"],
-  [Satzung, "/satzung"],
-  [WahlUndGeschaeftsOrdnung, "/wahl-und-geschaeftsordnung"]
+  [Arbeitsprogramm2020_21, "/arbeitsprogramm-2020-21", "Arbeitsprogramm 2020/21"],
+  [Satzung, "/satzung", "Satzung"],
+  [WahlUndGeschaeftsOrdnung, "/wahl-und-geschaeftsordnung", "Wahl- und Geschäftsordnung"]
 ];
 
 const PostContext = React.createContext({
