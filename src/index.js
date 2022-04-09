@@ -84,8 +84,8 @@ function Transition() {
 
 
 ReactDOM.render(
-  <HashRouter>
+  <Router>
     <Transition />
-  </HashRouter>,
+  </Router>,
   document.getElementById('root')
 );
