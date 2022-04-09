@@ -1,7 +1,5 @@
 import React from "react";
 
-import IndexHeaderLink from "./index-link";
-
 class IndexDetailedLink extends React.Component {
 
   constructor(props) {

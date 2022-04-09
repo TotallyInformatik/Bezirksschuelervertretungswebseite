@@ -6,7 +6,6 @@ import IndexDetailedLink from "./index-detailed-link";
 import "./navigation.css";
 import menuIcon from "./menu_black_24dp.svg";
 import closeIcon from "./close_black_24dp.svg";
-import PostContext from "../../../PostContext";
 
 
 class Navigation extends React.Component {
@@ -87,8 +86,5 @@ class Navigation extends React.Component {
   }
 
 }
-
-
-Navigation.contextType = PostContext;
 
 export default Navigation;

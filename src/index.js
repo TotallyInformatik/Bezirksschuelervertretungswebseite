@@ -17,6 +17,8 @@ import PostContext from './PostContext';
 import Home from "./components/Pages/Home/home";
 import Page404 from './components/Pages/404/404NotFound';
 import Aktuelles from './components/Pages/Aktuelles/Aktuelles';
+import Navigation from './components/reusables/Navigation/navigation';
+import PageFooter from './components/reusables/Footer/footer';
 
 
 AOS.init({
@@ -58,6 +60,9 @@ class TransitionContent extends React.Component {
 
 TransitionContent.contextType = PostContext;
 
+/// ????
+Navigation.contextType = PostContext;
+
 function Transition() {
 
   const location = useLocation();
@@ -77,8 +82,8 @@ function Transition() {
 
 
 ReactDOM.render(
-  <Router>
+  <HashRouter>
     <Transition />
-  </Router>,
+  </HashRouter>,
   document.getElementById('root')
 );
