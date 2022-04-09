@@ -58,7 +58,7 @@ nav .menu-button {
 .navigation-link-detailed .sub-menu {
   position: fixed;
   background-color: white;
-  width: 400px;
+  width: 100%;
 }
 .navigation-link-detailed .sub-menu .navigation-back-button {
   margin: 50px 0 0 50px;
@@ -109,4 +109,17 @@ nav .menu-button {
 
 .navigation-link-detailed .sub-menu.menu-closed {
   right: -400px;
+}
+
+@media screen and (max-width: 400px) {
+  nav ul.navigation-links, .navigation-link-detailed .sub-menu ul {
+    padding: 30px;
+  }
+  nav ul.navigation-links li, nav ul.navigation-links .navigation-link, .navigation-link-detailed .sub-menu ul li, .navigation-link-detailed .sub-menu ul .navigation-link {
+    font-size: 1.5rem;
+  }
+
+  .navigation-link-detailed .sub-menu .navigation-back-button {
+    margin: 30px 0 0 30px;
+  }
 }/*# sourceMappingURL=navigation.css.map */
