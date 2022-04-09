@@ -14,7 +14,9 @@ class Gallery extends React.Component {
 
   render() {
     return <PageTemplate title={this.title} subheading={this.subheading}>
-      {this.props.children}
+      <section className="gallery-section">
+        {this.props.children}
+      </section>
     </PageTemplate>;
   }
 

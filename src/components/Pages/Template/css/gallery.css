@@ -1,15 +1,15 @@
-.page-content-section {
+.gallery-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 750px;
   gap: 50px;
 }
-.page-content-section .card-link {
+.gallery-section .card-link {
   width: 100%;
   height: auto;
   max-height: 750px;
 }
-.page-content-section .card-link img {
+.gallery-section .card-link img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
@@ -17,56 +17,56 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .page-content-section {
+  .gallery-section {
     grid-template-rows: 550px;
     gap: 30px;
   }
-  .page-content-section .card-link {
+  .gallery-section .card-link {
     height: auto;
     max-height: 550px;
   }
 
-  .page-content-section .card-link-wrapper .card-link .heading-info h4 {
+  .gallery-section .card-link-wrapper .card-link .heading-info h4 {
     font-size: 1em;
   }
-  .page-content-section .card-link-wrapper .card-link .heading-info p {
+  .gallery-section .card-link-wrapper .card-link .heading-info p {
     font-size: 0.9em;
   }
-  .page-content-section .card-link-wrapper .card-link .abbreviated-info p {
+  .gallery-section .card-link-wrapper .card-link .abbreviated-info p {
     font-size: 0.9em;
   }
 }
 @media screen and (max-width: 1000px) {
-  .page-content-section {
+  .gallery-section {
     grid-template-rows: 450px;
     gap: 10px;
   }
-  .page-content-section .card-link {
+  .gallery-section .card-link {
     height: auto;
     max-height: 450px;
   }
 }
 @media screen and (max-width: 800px) {
-  .page-content-section {
+  .gallery-section {
     display: flex;
     flex-direction: column;
     gap: 100px;
     align-items: center;
     justify-content: center;
   }
-  .page-content-section .card-link {
+  .gallery-section .card-link {
     width: 100%;
     max-width: 450px;
     height: auto;
     max-height: 650px;
   }
-  .page-content-section .card-link img {
+  .gallery-section .card-link img {
     width: 100%;
     height: 450px;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .page-content-section .card-link section {
+  .gallery-section .card-link section {
     padding: 5%;
   }
 }/*# sourceMappingURL=gallery.css.map */

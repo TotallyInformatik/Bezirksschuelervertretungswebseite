@@ -19,6 +19,8 @@ import Page404 from './components/Pages/404/404NotFound';
 import Aktuelles from './components/Pages/Aktuelles/Aktuelles';
 import Navigation from './components/reusables/Navigation/navigation';
 import PageFooter from './components/reusables/Footer/footer';
+import MachMit from './components/Pages/MachMit/MachMit';
+import Kontakt from './components/Pages/Kontakt/Kontakt';
 
 
 AOS.init({
@@ -47,8 +49,8 @@ class TransitionContent extends React.Component {
       <Routes location={this.props.location}>
         <Route path="/" element={<Home />} />
         <Route path="/aktuelles" element={<Aktuelles />} />
-        <Route path="/mach-mit" element={<Home />} />
-        <Route path="/contact" element={<Home />} />
+        <Route path="/mach-mit" element={<MachMit />} />
+        <Route path="/contact" element={<Kontakt />} />
         
         { routes }
 

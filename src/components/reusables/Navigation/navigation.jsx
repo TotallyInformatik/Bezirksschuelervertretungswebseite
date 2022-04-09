@@ -75,6 +75,7 @@ class Navigation extends React.Component {
           </IndexDetailedLink>
           <IndexHeaderLink link="/mach-mit" display="Mach Mit!" />
           <IndexDetailedLink link="/contact" display="Kontakt">
+            <IndexHeaderLink link="/contact" display="Kontakt"></IndexHeaderLink>
             <li><a href="mailto:info@bsv-duesseldorf.de">E-mail</a></li>
             <li><a href="https://www.instagram.com/bsv.duesseldorf/">Instagram</a></li>
             <li><a href="https://www.facebook.com/bsvduesseldorf">Facebook</a></li>

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bb2cfc34.css",
-    "main.js": "/static/js/main.f6d9e16f.js",
+    "main.js": "/static/js/main.a9e63505.js",
     "static/media/Protokoll-34.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-34.-BDK-geschwaerzt.f42f4bb5bdff28cea357.pdf",
     "static/media/Protokoll-der-33.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-der-33.-BDK-geschwaerzt.07769bbf6a3d97f3576e.pdf",
     "static/media/Satzung-BSV-Duesseldorf-23.03.2017.pdf": "/static/media/Satzung-BSV-Duesseldorf-23.03.2017.ad010162097991c9b227.pdf",
@@ -32,10 +32,10 @@
     "static/media/close_black_24dp.svg": "/static/media/close_black_24dp.244b66874c46718f7e0607d3acebaccf.svg",
     "static/media/menu_black_24dp.svg": "/static/media/menu_black_24dp.df9f5f63435f6f806dea9ea5fe96f927.svg",
     "main.bb2cfc34.css.map": "/static/css/main.bb2cfc34.css.map",
-    "main.f6d9e16f.js.map": "/static/js/main.f6d9e16f.js.map"
+    "main.a9e63505.js.map": "/static/js/main.a9e63505.js.map"
   },
   "entrypoints": [
     "static/css/main.bb2cfc34.css",
-    "static/js/main.f6d9e16f.js"
+    "static/js/main.a9e63505.js"
   ]
 }

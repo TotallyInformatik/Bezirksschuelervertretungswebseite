@@ -1,0 +1,25 @@
+.page-content-section .flex-section-1 {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-content-section .flex-section-1 article {
+  width: 50%;
+}
+.page-content-section .flex-section-1 img {
+  box-shadow: 0 10px 90px 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .page-content-section .flex-section-1 {
+    flex-direction: column;
+  }
+  .page-content-section .flex-section-1 article {
+    width: 100%;
+  }
+  .page-content-section .flex-section-1 img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=MachMit.css.map */
