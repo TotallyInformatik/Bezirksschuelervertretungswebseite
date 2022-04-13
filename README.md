@@ -1,5 +1,8 @@
 # Webseite der Bezirksschülervertretung
+### Die Webseite der Bezirksschülervertretung wird verbessert 
 
-Die Webseite der Bezirksschülervertretung wird verbessert! -> [Jetzige Webseite](https://www.bsv-duesseldorf.de/)
+[Die Webseite](https://www.bsv-duesseldorf.de/)
 
--> React, Sass
+Entwickelt mit [React](https://reactjs.org/) und Engagement. Mein erstes vollständiges Projekt mit React. 
+Server und React-Routing mit Node.js konfiguriert.
+  
