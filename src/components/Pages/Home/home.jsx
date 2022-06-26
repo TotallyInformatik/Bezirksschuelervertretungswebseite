@@ -1,9 +1,9 @@
 import React from "react";
+import $ from "jquery";
 
 import { NavLink } from "react-router-dom";
 import ScrollIndicator from "../../reusables/ScrollIndicator/scroll-indicator";
 
-import "./../../../css/base.css";
 import "./css/home.css";
 
 
@@ -13,13 +13,43 @@ import BDK35 from "./../TemplateInstances/35-BDK/35-BDK";
 import PageWrapper from "../../reusables/page-wrapper";
 import AktionsTagGerechteBildung from "../TemplateInstances/AktionsTagGerechteBildung/AktionsTagGerechteBildung";
 import ZeroCovid from "../TemplateInstances/Zero-Covid/ZeroCovid";
-import IndexDetailedLink from "../../reusables/Navigation/index-detailed-link";
+import GlobalerKlimaStreik19_03_21 from "../TemplateInstances/GlobalerKlimaStreik19_03_21/GlobalerKlimaStreik";
+import RedHandDay2021 from "../TemplateInstances/RedHandDay_2021/RedHandDay";
+import PostContext from "../../../PostContext";
 
 // TODO: link für machmit!!
 
 class Home extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.progressbarRef = React.createRef();
+    this.introSectionRef = React.createRef();
+  }
+
   render() {
+
+    let mostRecentPosts = [];
+    let i = 0;
+    let count = 6; // only the most recent 6 posts will be shown
+    for (let post of this.context.posts) {
+      let PostComponent = post[0];
+      let postLink = post[1];
+      count--;
+
+      mostRecentPosts.push(
+        <div key={postLink} className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay={`${100 * i}`}>
+          <PostComponent type="link" to={postLink}/>
+        </div>
+      );
+      i++
+
+      if (count === 0) {
+        break;
+      }
+
+    }
 
     return (
       <PageWrapper>
@@ -50,11 +80,11 @@ class Home extends React.Component {
   
         </section>
   
-        <section className="introduction-section">
+        <section className="introduction-section" ref={this.introSectionRef}>
   
           <section className="decoration-section">
   
-            <div className="color"></div>
+            <div className="color" ref={this.progressbarRef}></div>
   
           </section>
   
@@ -99,7 +129,7 @@ class Home extends React.Component {
                 <h2 className="non-span-heading">Mach Mit</h2>
                 <p>
                   <span><u>Engagiere dich</u> auch für die Interessen der Schüler*innen.</span>
-                  <span>Erfahre <NavLink to="/impressum/">{">"}mehr{"<"}</NavLink> über das Mitmachen</span>
+                  <span>Erfahre <NavLink to="/mach-mit">{">"}mehr{"<"}</NavLink> über das Mitmachen</span>
                 </p>
               </div>
             </article>
@@ -113,31 +143,30 @@ class Home extends React.Component {
             <h1>Engagement</h1>
             <h1>Engagement</h1>
             <h1>Engagement</h1>
+            <h1>Engagement</h1>
           </div>
   
           <article>
             <h2 data-aos="fade-in" data-aos-anchor-placement="top-center">Unser Engagement</h2>
-            <h3 data-aos="fade-in" data-aos-anchor-placement="top-center">Auf einem Blick</h3>
+            <h3>Auf einem Blick</h3>
+            <h3>In Form von Posts</h3>
           </article>
-  
-  
-          <ScrollIndicator />
+
         </section>
 
         <section className="posts-section">
+
+          <section className="icon-section" data-aos="fade-down" data-aos-anchor-placement="top-center">
+            <div class="mouse-icon"></div>
+            <p>Click Die Posts An!</p>
+          </section>
+
           <div className="posts-container">
-            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="0">
-              <BDK34 type="link" />
-            </div>
-            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="100"><BDK35 type="link" /></div>
-            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="200"><AktionsTagGerechteBildung type="link" /></div>
-            <div className="post-wrapper" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-delay="300"><ZeroCovid type="link" /></div>
-
-
+            {mostRecentPosts}
           </div>
 
           <article>
-            <h2 data-aos="fade-in" data-aos-anchor-placement="top-center">Mehr zu aktuellen Informationen <NavLink to="/aktuelles" onClick={() => window.scrollTo({
+            <h2 data-aos="fade-in" data-aos-anchor-placement="top-center">Mehr gibt es <NavLink to="/aktuelles" onClick={() => window.scrollTo({
               top: 0,
               behavior: "smooth"
             })}>{">"}hier{"<"}</NavLink></h2>
@@ -148,9 +177,8 @@ class Home extends React.Component {
         <section className="conclusion-section">
           <article>
             <q>
-              Die BSV von Düsseldorf ist Krass
+              Schule den Schüler*innen
             </q>
-            <p>- Somebody for sure</p>
           </article>
         </section>
   
@@ -160,22 +188,32 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    /*
-    $(window).on("scroll", function() {
-      var offset = 0;
-      var sticky = false;
-      var top = $(window).scrollTop();
-        
-      if ($(".posts-section").offset().top < top) {
-        $(".posts-container").addClass("sticky");
-        sticky = true;
-      } else {
-        $(".posts-container").removeClass("sticky");
+
+    /// progress bar movement when scrolling
+    $(window).on("scroll", (e) => {
+      try {
+        let introSectionElement = $(this.introSectionRef.current);
+        let start = introSectionElement.offset().top;
+        let end = introSectionElement.offset().top + introSectionElement.height();
+        let current = $(window).scrollTop() - ($(window).innerHeight() / 2);
+  
+        let progress = current / (end - start) * 100;
+  
+        if (progress > -10 && progress < 110) {
+          $(this.progressbarRef.current).css({
+            height: progress + "%"
+          });
+        }
+      } catch (exception) {
+
       }
+
     });
-    */
+
   }
 
 }
+
+Home.contextType = PostContext;
 
 export default Home;

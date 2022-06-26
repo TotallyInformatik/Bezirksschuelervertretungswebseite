@@ -25,14 +25,16 @@ $screen-size-checkpoint-2: 400px;
   
     }
 
+  } 
+
+  .template-image-section {
     img {
-      top: 0;
+      top: -1 * ($image-size + $heading-padding);
       width: $image-size;
-      height: $image-size;
       margin-left: calc(50% - #{$image-size / 2});
     }
-
-  } 
+  }
+  
 
 } 
 
@@ -42,6 +44,11 @@ $screen-size-checkpoint-2: 400px;
 @media screen and (max-width: $screen-size-checkpoint-2) {
   $image-size: 200px;
 
+  .template-image-section img {
+    width: $image-size;
+    margin-left: calc(50% - #{$image-size / 2});
+  }
+
   .template-landing-section {
 
     article {
@@ -50,13 +57,6 @@ $screen-size-checkpoint-2: 400px;
         font-size: 2em;
       }
   
-    }
-
-    img {
-      top: 0;
-      width: $image-size;
-      height: $image-size;
-      margin-left: calc(50% - #{$image-size / 2});
     }
 
   } 
@@ -71,6 +71,8 @@ $screen-size-checkpoint-2: 400px;
 
 @media screen and (max-width: 1200px) {
 
+
+
   .template-content-section {
     padding-right: 100px;
     padding-left: 100px;
@@ -79,7 +81,7 @@ $screen-size-checkpoint-2: 400px;
 } 
 
 @media screen and (max-width: $screen-size-checkpoint-1) {
-  
+
   .template-content-section {
     padding-top: 100px;
     padding-right: 50px;
@@ -89,6 +91,11 @@ $screen-size-checkpoint-2: 400px;
 }
 
 @media screen and (max-width: $screen-size-checkpoint-2) {
+
+  .template-content-section {
+    padding: 30px;
+    padding-top: 100px;
+  }
 
   .template-content-section article {
 

@@ -69,6 +69,41 @@
 
 }
 
+@media screen and (max-width: 1600px) {
+  .posts-section .posts-container {
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .posts-section .posts-container {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  $post-height: 250px;
+
+  .posts-section .posts-container .post-wrapper .card-link {
+    
+    display: block;
+    height: $post-height;
+    width: $post-height;
+    height: $post-height;
+
+    img {
+      transition: height 0.1s ease-in-out, width 0.1s ease-in-out;
+      height: $post-height;
+      width: $post-height;
+    }
+
+  }
+
+  .posts-section .posts-container {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
 @media screen and (max-width: 1025px) {
 
   .introduction-section .content-section {
@@ -92,6 +127,14 @@
       font-size: 20em;
     }
 
+  }
+
+  .posts-section > article {
+    padding: 100px;
+  }
+
+  .conclusion-section {
+    padding: 100px;
   }
 
 }
@@ -128,6 +171,40 @@
 
   }
 
+  .posts-section > article {
+    h2 {
+      font-size: 2em;
+    }
+    padding: 50px;
+  }
+
+  .posts-section .posts-container {
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  $post-height: 200px;
+
+  .posts-section .posts-container .post-wrapper .card-link {
+    
+    display: block;
+    height: $post-height;
+    width: $post-height;
+    height: $post-height;
+
+    img {
+      transition: height 0.1s ease-in-out, width 0.1s ease-in-out;
+      height: $post-height;
+      width: $post-height;
+    }
+
+  }
+
+
+  .conclusion-section {
+    padding: 50px;
+  }
+
 }
 
 @media screen and (max-width: 370px) {
@@ -160,6 +237,10 @@
   .introduction-section .decoration-section {
     display: none;
     width: 0;
+  }
+
+  .conclusion-section {
+    font-size: 0.7em;
   }
 
 }

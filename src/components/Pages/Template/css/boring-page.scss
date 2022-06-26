@@ -1,0 +1,73 @@
+body main.page-template {
+  background-color: whitesmoke;
+}
+
+.title-section {
+  height: 50vh;
+  padding: 100px 200px;
+
+  h1.heading {
+    font-size: 5em;
+  }
+
+  
+  h2.sub-heading {
+    font-size: 2em;
+    opacity: 0.7;
+  }
+
+}
+
+.page-content-section {
+  padding: 200px;
+  padding-top: 0;
+
+  article p {
+    font-size: 1.1em;
+  }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .title-section {
+    padding: 50px 50px;
+    height: auto;
+  }
+
+  .page-content-section {
+    padding: 50px 50px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .title-section {
+    padding-top: 100px;
+
+    h1.heading {
+      font-size: 3em;
+    }
+  
+    
+    h2.sub-heading {
+      font-size: 1em;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .page-content-section, .title-section {
+    padding: 50px 30px;
+  }
+
+  .title-section {
+    padding-top: 100px;
+  }
+
+}

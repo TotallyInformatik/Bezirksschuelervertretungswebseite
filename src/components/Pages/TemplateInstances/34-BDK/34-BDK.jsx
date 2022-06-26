@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "./../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 import IconButton from "./../../../reusables/IconButton/button";
 
 import "./34-BDK.css";
@@ -14,24 +14,25 @@ class BDK34 extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Einladung zur 34. Bezirksdelegiertenkonferenz"
         thumbnail={bdkThumbnail}
         thumbnail_description="Sharepic für die Einladung zur 34. BDK"
         timeOfPublishment="Oktober 11, 2021"
         type={this.type}
-        to="/34-bdk"
+        to={this.to}
       >
         <p>
           Die 34. BDK der BSV Düsseldorf steht an.
         </p>
 
         <p>
-          Sie findet am 04.11.21 am <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">Leibniz Gymnasium</a> statt.
+          Sie findet am 04.11.21 am <a href="https://www.google.com/maps/search/leibniz+gymnasium/@51.2417533,6.7856171,19.21z">{">"}Leibniz Gymnasium{"<"}</a> statt.
         </p>
 
         <p>
@@ -40,15 +41,15 @@ class BDK34 extends React.Component {
 
         
 
-        <IconButton icon={downloadButton} download={invitationDocument}>
+        <IconButton icon={downloadButton} href={invitationDocument}>
           Einladung 34. BDK
         </IconButton>
 
-        <IconButton icon={downloadButton} download={protocollDocument}>
+        <IconButton icon={downloadButton} href={protocollDocument}>
           Protokoll der 33. BDK
         </IconButton>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

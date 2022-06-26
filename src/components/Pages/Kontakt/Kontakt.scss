@@ -1,0 +1,46 @@
+@import "./../../../css/constants.scss";
+
+
+.page-content-section .flex-section-2 {
+
+  display: flex;
+  gap: 100px;
+  align-items:flex-start;
+  justify-content: space-between;
+
+  article {
+    width: 60%;
+
+    ul {
+      padding-left: 25px;
+      margin-bottom: 100px;
+    }
+
+  }
+
+  img {
+    box-shadow: 0 10px 90px 10px $soft-shadow-color;
+    width: 100%;
+  }
+
+} 
+
+@media screen and (max-width: 1000px) {
+
+  .page-content-section .flex-section-2 {
+    flex-direction: column;
+
+    article {
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .page-content-section .flex-section-2 article h2 {
+    font-size: 1.3em;
+  }
+
+}

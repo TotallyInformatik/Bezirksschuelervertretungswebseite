@@ -1,0 +1,37 @@
+@import "./../../../css/constants.scss";
+
+.page-content-section .flex-section-1 {
+
+  display: flex;
+  gap: 100px;
+  align-items:flex-start;
+  justify-content: space-between;
+
+  article {
+    width: 50%;
+  }
+
+  img {
+    box-shadow: 0 10px 90px 10px $soft-shadow-color;
+    width: 50%;
+  }
+
+} 
+
+
+@media screen and (max-width: 1000px) {
+
+  .page-content-section .flex-section-1 {
+    flex-direction: column;
+
+    article {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+}

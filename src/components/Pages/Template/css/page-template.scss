@@ -12,52 +12,71 @@ $heading-padding: 100px;
   width: 100%;
   height: auto;
   min-height: 700px;
+  overflow: hidden;
+
+  position: relative;
+
+
+  .transparent-text {
+    top: 0;
+    position: absolute;
+    z-index: 0;
+    width: fit-content;
+    height: auto;
+    overflow: hidden;
+    h1 {
+      width: 100vw;
+      font-size: 20em;
+      line-height: 1;
+      position: relative;
+      left: 35vw;
+    }
+  }
 
   article {
 
     width: 100%;
-    min-height: 60%;
+    min-height: 50%;
     height: auto;
-    padding: $heading-padding;
-    
-    h1 {
-      position: relative;
+    padding: 200px $heading-padding;
+    overflow-x: hidden;
+
+    > h1 {
       z-index: 3;
       font-size: 5em;
       color: white;
     }
 
-    h3 {
-      user-select: none;
-      position: absolute;
-      font-size: 7em;
-      color: white;
-      opacity: 0.1;
-      z-index: 1;
-      top: calc($heading-padding + 5%);
-      left: 5% * 2;
-    }
-
   }
+
+  .scroll-indicator {
+    bottom: 50px;
+  }
+
+}
+
+.template-image-section {
+
+  height: 0;
 
   img {
     position: relative;
-    z-index: 1;
-
-    top: calc(#{$image-size} / 2);
+    z-index: 2;
+  
+    top: calc(-#{$image-size} / 2);
     width: $image-size;
-    height: $image-size;
     object-fit: contain;
-
+  
     margin-left: calc(50% - #{$image-size / 2});
-
+  
     box-shadow: 0px 30px 100px $soft-shadow-color;
   }
-
 
 }
 
 .template-content-section {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: auto;
   background-color: whitesmoke;
@@ -75,8 +94,12 @@ $heading-padding: 100px;
       margin: 50px 0 20px 0;
     }
     p {
-      font-size: 1.3em;
+      font-size: 1.1em;
       margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-bottom: 25px;
     }
 
   }

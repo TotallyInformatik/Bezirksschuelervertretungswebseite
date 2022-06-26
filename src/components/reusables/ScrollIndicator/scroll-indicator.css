@@ -1,10 +1,10 @@
 .scroll-indicator {
   bottom: 0;
-  left: calc(50% - 75px);
+  left: calc(50% - 37.5px);
   position: absolute;
-  width: 150px;
-  height: 150px;
-  background-image: url("./../../../media/svgs/arrow_drop_down_white_24dp.svg");
+  width: 75px;
+  height: 75px;
+  background-image: url("./../../../media/svgs/mouse-simple.svg");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-animation: scroll-indicator 1.8s infinite;
@@ -13,24 +13,24 @@
 
 @-webkit-keyframes scroll-indicator {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @keyframes scroll-indicator {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   50% {
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }/*# sourceMappingURL=scroll-indicator.css.map */

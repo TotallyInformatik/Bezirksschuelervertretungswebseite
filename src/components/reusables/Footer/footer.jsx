@@ -26,9 +26,6 @@ class PageFooter extends React.Component {
           <p>
             E-Mail: info@bsv-duesseldorf.de
           </p>
-          <a>
-            Impressum
-          </a>
         </section>
         <section className="link-section">
           <a className="email link-icon" href="mailto:info@bsv-duesseldorf.de"></a>
@@ -38,8 +35,6 @@ class PageFooter extends React.Component {
         </section>
         <section className="credit-section">
           <p>©2022 bsv-duesseldorf.de</p>
-          <p>Webseite von Rui Zhang</p>
-          <p>Vertreten durch Johannes</p>
         </section>
 
       </footer>

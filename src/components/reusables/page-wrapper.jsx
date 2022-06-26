@@ -12,7 +12,7 @@ class PageWrapper extends React.Component {
   render() {
     return <div>
       <Navigation />
-      {this.props.children}
+        {this.props.children}
       <PageFooter />
     </div>;
   }

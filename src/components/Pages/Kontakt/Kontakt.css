@@ -1,0 +1,31 @@
+.page-content-section .flex-section-2 {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.page-content-section .flex-section-2 article {
+  width: 60%;
+}
+.page-content-section .flex-section-2 article ul {
+  padding-left: 25px;
+  margin-bottom: 100px;
+}
+.page-content-section .flex-section-2 img {
+  box-shadow: 0 10px 90px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .page-content-section .flex-section-2 {
+    flex-direction: column;
+  }
+  .page-content-section .flex-section-2 article {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .page-content-section .flex-section-2 article h2 {
+    font-size: 1.3em;
+  }
+}/*# sourceMappingURL=Kontakt.css.map */

@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "./../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import img1 from "./IMG_20210419_233831_903.jpg";
 import img2 from "./IMG_20210419_233836_532.jpg";
@@ -11,17 +11,18 @@ class AktionsTagGerechteBildung extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Aktionstag für gerechte Bildung Düsseldorf 23.04.21"
         thumbnail={img1}
         thumbnail_description="Sharepic für den Aktionstag für gerechte Bildung in Düsseldorf"
         timeOfPublishment="April 20, 2021"
         type={this.type}
-        to="/aktionstag-gerechte-bildung"
+        to={this.to}
         color="#6680AD"
       >
         <p>
@@ -44,7 +45,7 @@ class AktionsTagGerechteBildung extends React.Component {
         </section>
 
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 

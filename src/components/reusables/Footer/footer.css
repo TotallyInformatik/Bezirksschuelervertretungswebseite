@@ -4,13 +4,16 @@ footer {
   position: relative;
   z-index: 4;
   color: white;
-  padding: 50px 20%;
+  padding: 50px 300px;
   display: grid;
   grid-template-areas: "kontakt links" "credits links";
   row-gap: 50px;
   -moz-column-gap: 50px;
        column-gap: 50px;
   justify-items: stretch;
+}
+footer * {
+  text-align: left;
 }
 footer a {
   color: whitesmoke;
@@ -58,16 +61,17 @@ footer .credit-section {
   grid-area: credits;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   footer {
-    padding: 50px 5%;
+    padding: 50px 100px;
   }
   footer .link-section {
     padding: 0 0 0 50px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   footer {
+    padding: 50px 50px;
     display: block;
   }
   footer .link-section {
@@ -78,5 +82,10 @@ footer .credit-section {
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer {
+    padding: 50px 30px;
   }
 }/*# sourceMappingURL=footer.css.map */

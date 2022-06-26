@@ -4,7 +4,7 @@ import "./scroll-indicator.css";
 
 function ScrollIndicator() {
   return (
-    <div className="scroll-indicator"></div>
+    <i className="scroll-indicator"></i>
   );
 }
 

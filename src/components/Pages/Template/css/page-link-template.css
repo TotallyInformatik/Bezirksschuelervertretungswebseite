@@ -20,8 +20,8 @@
 .card-link img {
   width: 450px;
   height: 450px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .card-link section {
   padding: 30px;

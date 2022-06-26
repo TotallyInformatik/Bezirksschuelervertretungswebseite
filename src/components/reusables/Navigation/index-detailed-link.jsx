@@ -1,7 +1,5 @@
 import React from "react";
 
-import IndexHeaderLink from "./index-link";
-
 class IndexDetailedLink extends React.Component {
 
   constructor(props) {
@@ -37,7 +35,6 @@ class IndexDetailedLink extends React.Component {
               onClick={this.closeSubMenu}
             ></div>
             <ul>
-              <IndexHeaderLink link={this.props.link} display={"> " + this.props.display} />
               {this.props.children}
             </ul>
           </nav>

@@ -1,5 +1,5 @@
 import React from "react";
-import PageTemplate from "./../../Template/page-template";
+import PostTemplate from "../../Template/page-template";
 
 import thumbnailPic from "./167667838_234765408429645_5699080646736834876_n-850x850.jpg";
 
@@ -8,17 +8,18 @@ class ZeroCovid extends React.Component {
   constructor(props) {
     super(props);
     this.type = this.props.type;
+    this.to = this.props.to;
   }
 
   render() {
     return (
-      <PageTemplate 
+      <PostTemplate 
         title="Rede zum ZeroCovid-Aktionstag am 10.04.21"
         thumbnail={thumbnailPic}
         thumbnail_description="Sharepic für die Einladung zur ZeroCovid-Aktionstag"
         timeOfPublishment="April 13, 2021"
         type={this.type}
-        to="/rede-zerocovid"
+        to={this.to}
       >
 
         <p>
@@ -56,7 +57,7 @@ class ZeroCovid extends React.Component {
           nicht das Marktinteresse.
         </blockquote>
 
-      </PageTemplate>
+      </PostTemplate>
     );
   }
 
