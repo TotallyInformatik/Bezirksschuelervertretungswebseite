@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb2cfc34.css",
-    "main.js": "/static/js/main.a9e63505.js",
+    "main.css": "/static/css/main.a8393a5c.css",
+    "main.js": "/static/js/main.f13a3887.js",
     "static/media/Protokoll-34.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-34.-BDK-geschwaerzt.f42f4bb5bdff28cea357.pdf",
     "static/media/Protokoll-der-33.-BDK-geschwaerzt.pdf": "/static/media/Protokoll-der-33.-BDK-geschwaerzt.07769bbf6a3d97f3576e.pdf",
+    "static/media/BSV_Duesseldorf.jpg": "/static/media/BSV_Duesseldorf.ae9c2d6daa68bbf185b2.jpg",
     "static/media/Satzung-BSV-Duesseldorf-23.03.2017.pdf": "/static/media/Satzung-BSV-Duesseldorf-23.03.2017.ad010162097991c9b227.pdf",
     "static/media/Sharepic-35-BDK-850x850.png": "/static/media/Sharepic-35-BDK-850x850.e8bc3538c361dafabd92.png",
     "static/media/Allgemeine-Einladung-zur-34-BDK.pdf": "/static/media/Allgemeine-Einladung-zur-34-BDK.a17c3b233ed36861c2a8.pdf",
     "static/media/Wahl-und-Geschaeftsordnung-BSV-Duesseldorf-23.03.2017.pdf": "/static/media/Wahl-und-Geschaeftsordnung-BSV-Duesseldorf-23.03.2017.d0d32591837e0ee96973.pdf",
     "static/media/IMG_20180123_171114-1024x575.jpg": "/static/media/IMG_20180123_171114-1024x575.c182f3d1dfcb67f41169.jpg",
     "static/media/Sharepic-BDK-850x850.jpg": "/static/media/Sharepic-BDK-850x850.3bcd88a7a8a332c4edb7.jpg",
+    "static/media/Screenshot 2022-04-09 160845.jpg": "/static/media/Screenshot 2022-04-09 160845.bb3c4dea4052d1dc3c92.jpg",
     "static/media/Einladung-35.-BDK.pdf": "/static/media/Einladung-35.-BDK.ad4b6d52750abeb876f8.pdf",
     "static/media/InstaFB-Feed-4-850x850.png": "/static/media/InstaFB-Feed-4-850x850.e44f1f176c47ed38b033.png",
     "static/media/160309302_286655146173350__n-850x850.jpg": "/static/media/160309302_286655146173350_3730911114197236186_n-850x850.195e5ee9a73221f1eb12.jpg",
@@ -31,11 +33,11 @@
     "static/media/email.svg": "/static/media/email.00b89819b3333e567282.svg",
     "static/media/close_black_24dp.svg": "/static/media/close_black_24dp.244b66874c46718f7e0607d3acebaccf.svg",
     "static/media/menu_black_24dp.svg": "/static/media/menu_black_24dp.df9f5f63435f6f806dea9ea5fe96f927.svg",
-    "main.bb2cfc34.css.map": "/static/css/main.bb2cfc34.css.map",
-    "main.a9e63505.js.map": "/static/js/main.a9e63505.js.map"
+    "main.a8393a5c.css.map": "/static/css/main.a8393a5c.css.map",
+    "main.f13a3887.js.map": "/static/js/main.f13a3887.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb2cfc34.css",
-    "static/js/main.a9e63505.js"
+    "static/css/main.a8393a5c.css",
+    "static/js/main.f13a3887.js"
   ]
 }

@@ -177,9 +177,8 @@ class Home extends React.Component {
         <section className="conclusion-section">
           <article>
             <q>
-              Auf eine bessere Zukunft für Düsseldorf
+              Schule den Schüler*innen
             </q>
-            <p>- Anonymous</p>
           </article>
         </section>
   
