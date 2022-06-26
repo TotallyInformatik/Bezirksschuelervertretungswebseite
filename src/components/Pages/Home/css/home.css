@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+.transparent-text h1 {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: rgba(255, 255, 255, 0.2);
+  word-wrap: initial;
+  word-break: initial;
+  -webkit-hyphens: initial;
+      -ms-hyphens: initial;
+          hyphens: initial;
+}
+
+.landing-section {
+  position: relative;
+  z-index: 4;
+  background-color: rgb(204, 127, 127);
+  background-image: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%);
+  display: flex;
+  height: auto;
+  min-height: 100vh;
+}
+
+.landing-section main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+.landing-section main article {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 100px 10%;
+  display: flex;
+  color: white;
+  align-items: center;
+}
+.landing-section main article .abbreviation {
+  font-family: "Arvo";
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 5rem;
+  transform: rotateZ(180deg);
+}
+.landing-section main article .heading {
+  font-size: 8rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+.landing-section main article .heading span {
+  margin-bottom: 10px;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+.landing-section main .transparent-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.landing-section main .transparent-text h1 {
+  font-size: 50em;
+  transform: rotateZ(45deg);
+  line-height: 1.1;
+}
+
+.introduction-section {
+  margin: 0;
+  background-color: whitesmoke;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 3;
+}
+.introduction-section .decoration-section {
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 1;
+  width: 10vw;
+  min-width: 10vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.introduction-section .decoration-section .color {
+  height: 50%;
+  width: 6px;
+  background-color: rgb(204, 127, 127);
+  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: calc((10vw / 2) - (6px / 2));
+}
+.introduction-section .content-section {
+  padding-right: 5vw;
+}
+.introduction-section .content-section article {
+  margin: 200px 0px;
+}
+.introduction-section .content-section article .checkpoint {
+  position: relative;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(204, 127, 127);
+  left: calc(-10vw / 2 - 20px / 2);
+}
+.introduction-section .content-section article .content {
+  display: flex;
+}
+.introduction-section .content-section article .content h2.span-heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  font-size: 5em;
+  align-items: flex-end;
+}
+.introduction-section .content-section article .content h2.non-span-heading {
+  display: none;
+}
+.introduction-section .content-section article .content p {
+  flex: 2;
+  margin-left: 40px;
+  font-size: 1.8em;
+  display: flex;
+  flex-direction: column;
+}
+.introduction-section .content-section article .content p span {
+  margin-bottom: 20px;
+}
+
+.posts-header-section {
+  position: relative;
+  height: auto;
+  min-height: 700px;
+  background: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%), linear-gradient(90deg, rgb(204, 127, 127), rgb(204, 127, 127));
+  z-index: 4;
+  overflow: hidden;
+  color: white;
+}
+.posts-header-section .transparent-text {
+  position: absolute;
+}
+.posts-header-section .transparent-text h1 {
+  line-height: 0.9;
+  font-size: 40em;
+}
+.posts-header-section article {
+  margin: 100px 0;
+  padding: 0 100px;
+  width: 100%;
+  height: auto;
+}
+.posts-header-section article h2 {
+  text-align: center;
+  font-size: 7em;
+  margin-bottom: 50px;
+}
+.posts-header-section article h3 {
+  text-align: center;
+  font-size: 4em;
+  opacity: 0.7;
+}
+
+.posts-section {
+  background-color: whitesmoke;
+  top: 0;
+  position: relative;
+  z-index: 3;
+  height: auto;
+}
+.posts-section .posts-container {
+  top: 100px;
+  display: flex;
+  gap: 150px;
+  padding: 100px;
+  overflow-x: auto;
+  transform: rotateZ(180deg);
+  direction: rtl;
+}
+.posts-section .posts-container .card-link {
+  text-align: left;
+  transform: rotateZ(180deg);
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.2);
+}
+.posts-section > article {
+  padding: 100px 200px;
+}
+.posts-section > article h2 {
+  font-size: 3em;
+}
+
+.conclusion-section {
+  position: relative;
+  z-index: 3;
+  background-image: linear-gradient(33deg, transparent 0%, transparent 8%, rgba(9, 9, 9, 0.02) 8%, rgba(9, 9, 9, 0.02) 59%, transparent 59%, transparent 100%), linear-gradient(234deg, transparent 0%, transparent 32%, rgba(225, 225, 225, 0.02) 32%, rgba(225, 225, 225, 0.02) 99%, transparent 99%, transparent 100%), linear-gradient(312deg, transparent 0%, transparent 24%, rgba(93, 93, 93, 0.02) 24%, rgba(93, 93, 93, 0.02) 58%, transparent 58%, transparent 100%), linear-gradient(90deg, rgb(204, 127, 127), rgb(204, 127, 127));
+  background-color: rgb(204, 127, 127);
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conclusion-section q {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 1100px) {
+  .landing-section main article {
+    padding: 140px 50px;
+  }
+  .landing-section main article .heading {
+    font-size: 6em;
+  }
+  .landing-section main article .abbreviation {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .landing-section main .transparent-text h1 {
+    font-size: 30em;
+  }
+
+  .landing-section main article {
+    padding: 160px 40px;
+  }
+  .landing-section main article .heading {
+    font-size: 4em;
+  }
+  .landing-section main article .abbreviation {
+    font-size: 3em;
+  }
+
+  .posts-header-section article {
+    padding: 0 50px;
+  }
+  .posts-header-section article h2 {
+    font-size: 4em;
+  }
+  .posts-header-section article h3 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .landing-section main article {
+    padding: 160px 20px;
+  }
+  .landing-section main article .heading {
+    font-size: 3em;
+  }
+  .landing-section main article .abbreviation {
+    font-size: 2em;
+  }
+
+  .posts-header-section article {
+    padding: 0 50px;
+  }
+  .posts-header-section article h2 {
+    font-size: 3em;
+  }
+  .posts-header-section article h3 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .introduction-section .content-section article .content h2.span-heading {
+    font-size: 3.5em;
+  }
+  .introduction-section .content-section article .content p {
+    font-size: 1.3em;
+  }
+
+  .posts-header-section .transparent-text h1 {
+    font-size: 20em;
+  }
+}
+@media screen and (max-width: 690px) {
+  .introduction-section .content-section article {
+    margin: 100px 0px;
+  }
+  .introduction-section .content-section article .content {
+    flex-direction: column;
+  }
+  .introduction-section .content-section article .content h2.span-heading {
+    display: flow-root;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    font-size: 3em;
+  }
+  .introduction-section .content-section article .content h2.span-heading span {
+    margin-right: 20px;
+  }
+  .introduction-section .content-section article .content p {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .introduction-section .content-section {
+    margin: 50px 30px;
+  }
+  .introduction-section .content-section article .checkpoint {
+    display: none;
+  }
+  .introduction-section .content-section article .content h2.span-heading {
+    display: none;
+  }
+  .introduction-section .content-section article .content h2.non-span-heading {
+    display: block;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(204, 127, 127);
+  }
+  .introduction-section .content-section article .content p {
+    margin-left: 0;
+  }
+
+  .introduction-section .decoration-section {
+    display: none;
+    width: 0;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -3,8 +3,9 @@ nav {
   z-index: 99999;
 }
 nav ul.navigation-links {
-  transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  right: 30px;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.075, 0.075);
+  transition: right 0.5s, opacity 0.5s;
+  top: 110px;
   position: fixed;
   width: calc(100% - 60px);
   max-width: 400px;
@@ -32,11 +33,11 @@ nav ul.navigation-links li:hover, nav ul.navigation-links li:focus {
   margin-right: -10px;
 }
 nav ul.navigation-links.open {
-  top: 110px;
+  right: 30px;
   opacity: 1;
 }
 nav ul.navigation-links.closed {
-  top: 0px;
+  right: -100%;
   opacity: 0;
 }
 nav .menu-button {
