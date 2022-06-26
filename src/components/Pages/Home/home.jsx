@@ -8,13 +8,7 @@ import "./css/home.css";
 
 
 /// page-link
-import BDK34 from "./../TemplateInstances/34-BDK/34-BDK";
-import BDK35 from "./../TemplateInstances/35-BDK/35-BDK";
 import PageWrapper from "../../reusables/page-wrapper";
-import AktionsTagGerechteBildung from "../TemplateInstances/AktionsTagGerechteBildung/AktionsTagGerechteBildung";
-import ZeroCovid from "../TemplateInstances/Zero-Covid/ZeroCovid";
-import GlobalerKlimaStreik19_03_21 from "../TemplateInstances/GlobalerKlimaStreik19_03_21/GlobalerKlimaStreik";
-import RedHandDay2021 from "../TemplateInstances/RedHandDay_2021/RedHandDay";
 import PostContext from "../../../PostContext";
 
 // TODO: link für machmit!!
