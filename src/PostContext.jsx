@@ -15,11 +15,13 @@ import ResolutionWirtschaftAlsFach from "./components/Pages/TemplateInstances/Re
 import Satzung from "./components/Pages/TemplateInstances/Satzung/Satzung";
 import WahlUndGeschaeftsOrdnung from "./components/Pages/TemplateInstances/WahlUndGeschaeftsordnung/WahlUndGeschaeftsordnung";
 import ZeroCovid from "./components/Pages/TemplateInstances/Zero-Covid/ZeroCovid";
+import LetzterSchultag2022 from "./components/Pages/TemplateInstances/LetzterSchultag2022/LetzterSchultag2022";
 
 /// immer in der richtigen Reihenfolge einfügen
 /// Format: ReactComponentName, path, (title)
 
 const allPosts = [
+  [LetzterSchultag2022, "/letzter-schultag-2022"],
   [BDK35, "/35-bdk"],
   [BDK34, "/34-bdk"],
   [AktionsTagGerechteBildung, "/aktionstag-gerechte-bildung"],
